@@ -48,39 +48,6 @@ export default class Header extends Component {
 					<div className="quickLinks-top js-quickLinks-top" />
 					<div className="js-quickLinks-wrap-m"></div>
 				</div>
-				{/* <div className="header-topline d-none d-lg-flex">
-					<div className="container">
-						<div className="row align-items-center">
-							<div className="col-auto d-flex align-items-center">
-								<div className="header-info">
-									<i className="icon-placeholder2" />
-									1560 Holden Street San Diego, CA 92139
-								</div>
-								<div className="header-phone">
-									<i className="icon-telephone" />
-									<a href="tel:1-847-555-5555">1-800-267-0000</a>
-								</div>
-								<div className="header-info">
-									<i className="icon-black-envelope" />
-									<a href="mailto:info@dentco.net">info@dentco.net</a>
-								</div>
-							</div>
-							<div className="col-auto ml-auto d-flex align-items-center">
-								<span className="header-social">
-									<a href="#" className="hovicon">
-										<i className="icon-facebook-logo-circle" />
-									</a>
-									<a href="#" className="hovicon">
-										<i className="icon-twitter-logo-circle" />
-									</a>
-									<a href="#" className="hovicon">
-										<i className="icon-google-plus-circle" />
-									</a>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div> */}
 				<div className="header-content">
 					<div className="container">
 						<div className="row align-items-lg-center">
@@ -92,7 +59,7 @@ export default class Header extends Component {
 								<span className="icon-menu" />
 							</button>
 							<div className="col-lg-auto col-lg-2 d-flex align-items-lg-center">
-								<a href="index-2.html" className="header-logo">
+								<a href="#" className="header-logo">
 									<img src="/logo.png" alt="" className="img-fluid" />
 								</a>
 							</div>
@@ -105,13 +72,13 @@ export default class Header extends Component {
 										>
 											<ul className="navbar-nav">
 												<li className="nav-item">
-													<a className="nav-link" href="about.html">
+													<a className="nav-link" href="#">
 														About Us
 													</a>
 												</li>
 												<li className="nav-item">
 													<a
-														href="services.html"
+														href="#"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
@@ -119,107 +86,99 @@ export default class Header extends Component {
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="services.html">
-																All Services
+															<a className="dropdown-item" href="#">
+																Laboratories
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="service-page.html">
-																Service Page
+															<a className="dropdown-item" href="#">
+																Doctors
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="prices.html">
-																Prices
+															<a className="dropdown-item" href="#">
+																Patients
+															</a>
+														</li>
+														
+													</ul>
+												</li>
+												<li className="nav-item">
+													<a
+														href="#"
+														className="nav-link dropdown-toggle"
+														data-toggle="dropdown"
+													>
+														Health Care Providers
+													</a>
+													<ul className="dropdown-menu">
+														<li>
+															<a className="dropdown-item" href="#">
+																Background
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="shop-listing.html">
-																Online Shop
+															<a className="dropdown-item" href="#">
+																Getting Started
+															</a>
+														</li>
+														<li>
+															<a className="dropdown-item" href="#">
+																Schedule an Appointment
 															</a>
 														</li>
 													</ul>
 												</li>
 												<li className="nav-item">
 													<a
-														href="gallery.html"
+														href="#"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
-														Smiles Gallery
+														Patients
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="gallery.html">
-																Creative Gallery
+															<a className="dropdown-item" href="#">
+																Who Should Be Tested
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="gallery-simple.html">
-																Simple Gallery
+															<a className="dropdown-item" href="#">
+																How It Works
 															</a>
 														</li>
+														
 													</ul>
-												</li>
-												<li className="nav-item">
-													<a
-														href="our-specialist.html"
-														className="nav-link dropdown-toggle"
-														data-toggle="dropdown"
-													>
-														Our Specialists
-													</a>
-													<ul className="dropdown-menu">
-														<li>
-															<a className="dropdown-item" href="our-specialist.html">
-																All Specialists
-															</a>
-														</li>
-														<li>
-															<a className="dropdown-item" href="doctor-page.html">
-																Doctor Page
-															</a>
-														</li>
-														<li>
-															<a className="dropdown-item" href="schedule.html">
-																Schedule Table
-															</a>
-														</li>
-													</ul>
-												</li>
-												<li className="nav-item">
-													<a className="nav-link" href="testimonials.html">
-														Testimonials
-													</a>
 												</li>
 												<li className="nav-item dropdown">
 													<a
-														href="blog.html"
+														href="#"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
-														Blog
+														The Facts
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="blog.html">
-																Blog Posts
+															<a className="dropdown-item" href="#">
+																Health Statistics
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="blog-grid.html">
-																Blog Grid Posts
+															<a className="dropdown-item" href="#">
+																Health Care Cost
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="blog-post-page.html">
-																Blog Single Post
+															<a className="dropdown-item" href="#">
+																What are the Medical Cornerstones
 															</a>
 														</li>
 													</ul>
 												</li>
 												<li className="nav-item">
-													<a className="nav-link" href="contact.html">
+													<a className="nav-link" href="#">
 														Contacts
 													</a>
 												</li>
@@ -227,14 +186,14 @@ export default class Header extends Component {
 										</div>
 									</nav>
 								</div>
-								<div className="header-search">
-									<form action="#" className="form-inline">
+								<div style={{marginTop: '-20px'}} className="header-search">
+									<div  className="form-inline">
 										<i className="icon-search" />
 										<input type="text" placeholder="Search" />
 										<button type="submit">
 											<i className="icon-search" />
 										</button>
-									</form>
+									</div>
 								</div>
 							</div>
 						</div>

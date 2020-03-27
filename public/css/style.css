@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*-------------------------------
 [Table of contents]
-
+header-search
 1. Bootstrap Core
 2. Theme Styles
 	2.1 Typography
@@ -11531,9 +11531,11 @@ body.noScroll {
 
 @media (max-width: 1023px) {
   .has-lang .header-search {
+  
     right: 158px; } }
 @media (max-width: 767px) {
   .has-lang .header-search {
+
     right: 108px; } }
 
 @media (max-width: 1023px) {
@@ -11892,12 +11894,12 @@ body.noScroll {
     #mainSlider .slide-txt1 {
       font-size: 20px; }
     #mainSlider .slide-txt2 {
-      display: none; }
+      display: initial; }
     #mainSlider .slide-btn {
-      display: none;
+      display: initial;
       margin-top: 20px; }
       #mainSlider .slide-btn [class*='icon-'] {
-        display: none; }
+        display: initial; }
       #mainSlider .slide-btn .btn,
       #mainSlider .slide-btn .btn:focus {
         font-size: 14px;

@@ -16,7 +16,7 @@ export default class Home extends Component {
 		};
 	}
 
-	componentDidMount = () => {
+	componentDidMount = () => {	
 		this.setState({ cartItems: [] });
 	};
 
@@ -44,66 +44,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<div className="settings-panel">
-					{' '}
-					<div className="settings-panel-buy-now">
-						{' '}
-						<a
-							href="https://themeforest.net/item/medin-medical-clinic-html-template/22564438?s_rank=1"
-							target="_blank"
-							className="settings-panel-btn btn-primary"
-						>
-							{' '}
-							<img src="color/icon-cart.png" alt="" /> Purchase Now{' '}
-						</a>{' '}
-					</div>{' '}
-					<div className="settings-panel-colorswatch js-settings-panel-item">
-						{' '}
-						<div className="settings-panel-btn btn-primary js-settings-panel-btn">
-							{' '}
-							<img src="color/icon-settings.png" alt="" />{' '}
-						</div>{' '}
-						<div className="settings-panel-inside">
-							{' '}
-							<a href="#" className="colorswatch1 active js-swatch-color" />{' '}
-							<a href="#" className="colorswatch2 js-swatch-color" data-color={1} />{' '}
-							<a href="#" className="colorswatch3 js-swatch-color" data-color={2} />{' '}
-							<a href="#" className="colorswatch4 js-swatch-color" data-color={3} />{' '}
-							<a href="#" className="colorswatch5 js-swatch-color" data-color={4} />{' '}
-							<a href="#" className="colorswatch6 js-swatch-color" data-color={5} />{' '}
-							<div className="clearfix" /> <div className="title">Color</div>{' '}
-						</div>{' '}
-					</div>{' '}
-					<div className="settings-panel-layout js-settings-panel-item">
-						{' '}
-						<div className="settings-panel-btn btn-primary js-settings-panel-btn">
-							{' '}
-							<img src="color/icon-layout.png" alt="" />{' '}
-						</div>{' '}
-						<div className="settings-panel-inside">
-							{' '}
-							<a href="http://websmirno.site/medin/html/dentco-html/">
-								<img src="color/screen-layout-1.png" alt="" />
-							</a>{' '}
-							<a href="http://websmirno.site/medin/html/surgery-html/">
-								<img src="color/screen-layout-2.png" alt="" />
-							</a>{' '}
-							<a href="http://websmirno.site/medin/html/medol-html/">
-								<img src="color/screen-layout-3.png" alt="" />
-							</a>{' '}
-							<a href="http://websmirno.site/medin/html/medera-html/">
-								<img src="color/screen-layout-4.png" alt="" />
-							</a>{' '}
-							<a href="http://websmirno.site/medin/html/medeye-html/">
-								<img src="color/screen-layout-5.png" alt="" />
-							</a>{' '}
-							<a href="index.html" className="active">
-								<img src="color/screen-layout-6.png" alt="" />
-							</a>{' '}
-						</div>{' '}
-					</div>
-				</div>
-				{/*header*/}
+
 				<Header />
 				{/*//header*/}
 				<div className="page-content">
@@ -113,283 +54,46 @@ export default class Home extends Component {
 							<div className="quickLinks js-quickLinks closed">
 								<div className="container">
 									<div className="row no-gutters">
-										<div className="col">
-											<a href="#" className="link">
-												<i className="icon-placeholder" />
-												<span>Location</span>
-											</a>
-											<div className="link-drop p-0">
-												<div className="google-map">
-													<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40119.804311386426!2d-97.32055794896301!3d37.64364017354126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae4ec254beb5f%3A0x410df48edd2f5ede!2sGraceMed%20Jardine%20Family%20Clinic!5e0!3m2!1sen!2sua!4v1579853082410!5m2!1sen!2sua" />
-												</div>
-											</div>
-										</div>
-										<div className="col">
-											<a href="#" className="link">
-												<i className="icon-clock" />
-												<span>Working Time</span>
-											</a>
-											<div className="link-drop">
-												<h5 className="link-drop-title">
-													<i className="icon-clock" />
-													Working Time
-												</h5>
-												<table className="row-table">
-													<tbody>
-														<tr>
-															<td>
-																<i>Mon-Thu</i>
-															</td>
-															<td>08:00 - 20:00</td>
-														</tr>
-														<tr>
-															<td>
-																<i>Friday</i>
-															</td>
-															<td> 07:00 - 22:00</td>
-														</tr>
-														<tr>
-															<td>
-																<i>Saturday</i>
-															</td>
-															<td>08:00 - 18:00</td>
-														</tr>
-														<tr>
-															<td>
-																<i>Sunday</i>
-															</td>
-															<td>Closed</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</div>
-										<div className="col">
-											<a href="#" className="link">
-												<i className="icon-pencil-writing" />
-												<span>Request Form</span>
-											</a>
-											<div className="link-drop">
-												<h5 className="link-drop-title">
-													<i className="icon-pencil-writing" />
-													Request Form
-												</h5>
-												<form id="requestForm" method="post" noValidate>
-													<div className="successform">
-														<p>Your message was sent successfully!</p>
-													</div>
-													<div className="errorform">
-														<p>
-															Something went wrong, try refreshing and submitting the form
-															again.
-														</p>
-													</div>
-													<div className="input-group">
-														<span>
-															<i className="icon-user" />
-														</span>
-														<input
-															name="requestname"
-															type="text"
-															className="form-control"
-															placeholder="Your Name"
-														/>
-													</div>
-													<div className="row row-sm-space mt-1">
-														<div className="col">
-															<div className="input-group">
-																<span>
-																	<i className="icon-email2" />
-																</span>
-																<input
-																	name="requestemail"
-																	type="text"
-																	className="form-control"
-																	placeholder="Your Email"
-																/>
-															</div>
-														</div>
-														<div className="col">
-															<div className="input-group">
-																<span>
-																	<i className="icon-smartphone" />
-																</span>
-																<input
-																	name="requestphone"
-																	type="text"
-																	className="form-control"
-																	placeholder="Your Phone"
-																/>
-															</div>
-														</div>
-													</div>
-													<div className="selectWrapper input-group mt-1">
-														<span>
-															<i className="icon-micro" />
-														</span>
-														<select name="requestservice" className="form-control">
-															<option selected="selected" disabled="disabled">
-																Select Service
-															</option>
-															<option value="Molecular Testing & Oncology">
-																Molecular Testing &amp; Oncology
-															</option>
-															<option value="Histology">Histology</option>
-															<option value="General Diagnostic Tests">
-																General Diagnostic Tests
-															</option>
-															<option value="Naturopathic">Naturopathic</option>
-															<option value="Genetics Tests">Genetics Tests</option>
-															<option value="Cytology">Cytology</option>
-														</select>
-													</div>
-													<div className="row row-sm-space mt-1">
-														<div className="col-sm-6">
-															<div className="input-group flex-nowrap">
-																<span>
-																	<i className="icon-calendar2" />
-																</span>
-																<div className="datepicker-wrap">
-																	<input
-																		name="requestdate"
-																		type="text"
-																		className="form-control datetimepicker"
-																		placeholder="Date"
-																		readOnly
-																	/>
-																</div>
-															</div>
-														</div>
-														<div className="col-sm-6 mt-1 mt-sm-0">
-															<div className="input-group flex-nowrap">
-																<span>
-																	<i className="icon-clock" />
-																</span>
-																<div className="datepicker-wrap">
-																	<input
-																		name="requesttime"
-																		type="text"
-																		className="form-control timepicker"
-																		placeholder="Time"
-																		readOnly
-																	/>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div className="text-right mt-2">
-														<button type="submit" className="btn btn-sm btn-hover-fill">
-															Request
-														</button>
-													</div>
-												</form>
-											</div>
-										</div>
-										<div className="col">
-											<a href="#" className="link">
-												<i className="icon-calendar" />
-												<span>Doctors Timetable</span>
-											</a>
-											<div className="link-drop">
-												<h5 className="link-drop-title">
-													<i className="icon-calendar" />
-													Doctors Timetable
-												</h5>
-												<p>
-													This simply works as a guide and helps you to connect with dentists
-													of your choice. Please confirm the doctor’s availability before
-													leaving your premises.
-												</p>
-												<p className="text-right">
-													<a
-														href="#specialistsSection"
-														className="btn btn-sm btn-hover-fill link-inside"
-													>
-														Details
-													</a>
-												</p>
-											</div>
-										</div>
+									
+										
 										<div className="col">
 											<a href="#" className="link">
 												<i className="icon-price-tag" />
-												<span>Calculator</span>
+												<span>	Interpretations Menu</span>
 											</a>
 											<div className="link-drop">
 												<h5 className="link-drop-title">
 													<i className="icon-price-tag" />
-													Quick Pricing
+													Interpretations Menu
 												</h5>
 												<table className="row-table">
 													<tbody>
 														<tr>
-															<td>Initial Consultation</td>
-															<td>$10</td>
+															<td>Endocrinologist Interpretation</td>
+															<td>$3</td>
 														</tr>
 														<tr>
-															<td>Dental check-up</td>
-															<td>$15</td>
+															<td>Fertility Interpretation</td>
+															<td>$3</td>
 														</tr>
 														<tr>
-															<td>Routine Exam (no xrays)</td>
-															<td>$50</td>
+															<td>Bio-Hacking</td>
+															<td>$3</td>
 														</tr>
 														<tr>
-															<td>Simple Removal of a tooth</td>
-															<td>$122</td>
+															<td>Anti Aging Interpretation</td>
+															<td>Free</td>
 														</tr>
 														<tr>
-															<td>Teeth cleaning</td>
-															<td>$50 - $75</td>
+															<td>Standard Interpretation</td>
+															<td>Free</td>
 														</tr>
-														<tr>
-															<td>X-ray image</td>
-															<td>$10</td>
-														</tr>
+
 													</tbody>
 												</table>
 											</div>
 										</div>
-										<div className="col">
-											<a href="#" className="link">
-												<i className="icon-emergency-call" />
-												<span>Emergency Case</span>
-											</a>
-											<div className="link-drop">
-												<h5 className="link-drop-title">
-													<i className="icon-emergency-call" />
-													Emergency Case
-												</h5>
-												<p>
-													Emergency dental care may be needed if you have had a blow to the
-													face, lost a filling, or cracked a tooth.{' '}
-												</p>
-												<ul className="icn-list">
-													<li>
-														<i className="icon-telephone" />
-														<span className="phone">
-															1-800-267-0000
-															<br />
-															1-800-267-0001
-														</span>
-													</li>
-													<li>
-														<i className="icon-black-envelope" />
-														<a href="mailto:info@besthotel-email.com">
-															info@besthotel-email.com
-														</a>
-													</li>
-												</ul>
-												<p className="text-right mt-2">
-													<a
-														href="#contactForm"
-														className="btn btn-sm btn-hover-fill link-inside"
-													>
-														Our Contacts
-													</a>
-												</p>
-											</div>
-										</div>
+										
 										<div className="col col-close">
 											<a href="#" className="js-quickLinks-close">
 												<i
@@ -540,7 +244,7 @@ export default class Home extends Component {
 									<div className="department-tabs2">
 										<div className="department-tab2">
 											<div className="department-tab2-number">1</div>
-											<div className="department-tab2-text">Latest Equipment</div>
+											<div className="department-tab2-text">Latest Tech</div>
 											<div className="department-tab2-decor" />
 										</div>
 										<div className="department-tab2">
@@ -585,8 +289,9 @@ export default class Home extends Component {
 												<li>Educate patients</li>
 												<li>Expedite the progress toward preventative care</li>
 											</ul>
-											<Link
-												to="/"
+											<a
+												href="https://easylabs.org/patient/report/"
+												target="_blank"
 												className="btn mt-3"
 												data-toggle="modal"
 												// data-target="#modalBookingForm"
@@ -594,7 +299,7 @@ export default class Home extends Component {
 												<i className="icon-right-arrow" />
 												<span>Get your free results interpretations</span>
 												<i className="icon-right-arrow" />
-											</Link>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -624,39 +329,35 @@ export default class Home extends Component {
 							<div className="nav nav-pills-icons" role="tablist">
 								<a className="nav-link active" data-toggle="pill" role="tab">
 									<i className="icon-molecular" />
-									<span>Molecular Testing &amp; Oncology</span>
+									<span>Fully &amp; Customizable</span>
 								</a>
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-testtube2" />
-									<span>Histology</span>
+									<span>Easy to use</span>
 								</a>
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-micro" />
 									<span>
 									Cutting Edge Diagnostics 
-										<br />
-										from Multiple Perspectives
+
 									</span>
 								</a>
 							
-							</div>
-							<div className="nav nav-pills-icons" role="tablist">
-								
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-testtube" />
 									<span>
-										Naturopathic
+										Clinical
 										<br />
-										Tests
+										Support
 									</span>
 								</a>
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-chromosome" />
-									<span>Genetics Tests</span>
+									<span> Precise Reporting</span>
 								</a>
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-dropper" />
-									<span>Cytology</span>
+									<span>Evidence Based</span>
 								</a>
 							</div>
 						</div>
