@@ -471,7 +471,8 @@ export default class Home extends Component {
 													></div>
 													<div className="slide-btn">
 														<a
-															href="services.html"
+															href="https://easylabs.org/patient/report/"
+															target="_blank"
 															className="btn link-inside"
 															data-animation="fadeInUp"
 															data-animation-delay="2s"
@@ -508,7 +509,8 @@ export default class Home extends Component {
 													></div>
 													<div className="slide-btn">
 														<a
-															href="services.html"
+															href="https://easylabs.org/patient/report/"
+															target="_blank"
 															className="btn link-inside"
 															data-animation="fadeInUp"
 															data-animation-delay="2s"
@@ -583,16 +585,16 @@ export default class Home extends Component {
 												<li>Educate patients</li>
 												<li>Expedite the progress toward preventative care</li>
 											</ul>
-											<a
-												href="#"
+											<Link
+												to="/"
 												className="btn mt-3"
 												data-toggle="modal"
-												data-target="#modalBookingForm"
+												// data-target="#modalBookingForm"
 											>
 												<i className="icon-right-arrow" />
 												<span>Get your free results interpretations</span>
 												<i className="icon-right-arrow" />
-											</a>
+											</Link>
 										</div>
 									</div>
 								</div>
@@ -692,10 +694,9 @@ export default class Home extends Component {
 												patients and welcome new patients to sample.
 												
 											</p>
-											<form
+											<div
 												className="contact-form"
 												id="contactForm"
-												method="post"
 												noValidate="novalidate"
 											>
 												<div className="successform">
@@ -748,7 +749,7 @@ export default class Home extends Component {
 														<i className="icon-right-arrow" />
 													</button>
 												</div>
-											</form>
+											</div>
 										</div>
 									</div>
 								</div>
