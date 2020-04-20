@@ -59,9 +59,9 @@ export default class Header extends Component {
 								<span className="icon-menu" />
 							</button>
 							<div className="col-lg-auto col-lg-2 d-flex align-items-lg-center">
-								<a href="#" className="header-logo">
+								<Link to="/" className="header-logo">
 									<img src="/logo.png" alt="" className="img-fluid" />
-								</a>
+								</Link>
 							</div>
 							<div className="col-lg ml-auto header-nav-wrap">
 								<div className="header-nav js-header-nav">
@@ -72,9 +72,9 @@ export default class Header extends Component {
 										>
 											<ul className="navbar-nav">
 												<li className="nav-item">
-													<a className="nav-link" href="#">
+													<Link to="/about" className="nav-link">
 														About Us
-													</a>
+													</Link>
 												</li>
 												<li className="nav-item">
 													<a
