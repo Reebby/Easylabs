@@ -105,13 +105,13 @@ export default class Header extends Component {
 										>
 											<ul className="navbar-nav">
 												<li className="nav-item">
-													<a className="nav-link" href="about.html">
+													<a className="nav-link" href="#">
 														About Us
 													</a>
 												</li>
 												<li className="nav-item">
 													<a
-														href="services.html"
+														href="#"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
@@ -119,96 +119,89 @@ export default class Header extends Component {
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="services.html">
-																All Services
+															<a className="dropdown-item" href="#">
+																Laboratories
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="service-page.html">
-																Service Page
+															<a className="dropdown-item" href="#">
+																Doctors
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="prices.html">
-																Prices
+															<a className="dropdown-item" href="#">
+																Patients
+															</a>
+														</li>
+														
+													</ul>
+												</li>
+												<li className="nav-item">
+													<a
+														href="#"
+														className="nav-link dropdown-toggle"
+														data-toggle="dropdown"
+													>
+														Health Care Providers
+													</a>
+													<ul className="dropdown-menu">
+														<li>
+															<a className="dropdown-item" href="#">
+																Background
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="shop-listing.html">
-																Online Shop
+															<a className="dropdown-item" href="#">
+																Getting Started
+															</a>
+														</li>
+														<li>
+															<a className="dropdown-item" href="#">
+																Schdule an Appointment
 															</a>
 														</li>
 													</ul>
 												</li>
 												<li className="nav-item">
 													<a
-														href="gallery.html"
+														href="#"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
-														Smiles Gallery
+														Patients
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="gallery.html">
-																Creative Gallery
+															<a className="dropdown-item" href="#">
+																Who Should Be Tested
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="gallery-simple.html">
-																Simple Gallery
+															<a className="dropdown-item" href="#">
+																How it Works
 															</a>
 														</li>
+														
 													</ul>
 												</li>
-												<li className="nav-item">
-													<a
-														href="our-specialist.html"
-														className="nav-link dropdown-toggle"
-														data-toggle="dropdown"
-													>
-														Our Specialists
-													</a>
-													<ul className="dropdown-menu">
-														<li>
-															<a className="dropdown-item" href="our-specialist.html">
-																All Specialists
-															</a>
-														</li>
-														<li>
-															<a className="dropdown-item" href="doctor-page.html">
-																Doctor Page
-															</a>
-														</li>
-														<li>
-															<a className="dropdown-item" href="schedule.html">
-																Schedule Table
-															</a>
-														</li>
-													</ul>
-												</li>
-												<li className="nav-item">
-													<a className="nav-link" href="testimonials.html">
-														Testimonials
-													</a>
-												</li>
+												
 												<li className="nav-item dropdown">
 													<a
-														href="blog.html"
+														href="#"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
-														Blog
+														The Facts
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="blog.html">
-																Blog Posts
+															<a className="dropdown-item" href="#">
+																Health Statistics
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="blog-grid.html">
-																Blog Grid Posts
+															<a className="dropdown-item" href="#">
+																Health Care Cost
 															</a>
 														</li>
 														<li>
@@ -219,7 +212,7 @@ export default class Header extends Component {
 													</ul>
 												</li>
 												<li className="nav-item">
-													<a className="nav-link" href="contact.html">
+													<a className="nav-link" href="#">
 														Contacts
 													</a>
 												</li>
