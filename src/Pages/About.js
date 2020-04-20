@@ -57,16 +57,7 @@ export default class About extends Component {
       <div>
         <Header />
         <div className="page-content"> 
-          <div className="section mt-0">
-            <div className="breadcrumbs-wrap">
-              <div className="container">
-                <div className="breadcrumbs">
-                  <Link to="/">Home</Link>
-                  <span><Link to="/about">About Us</Link></span>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           {/*//section*/}
           {/*section*/}
           <div className="section page-content-first">
