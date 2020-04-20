@@ -61,8 +61,8 @@ export default class About extends Component {
             <div className="breadcrumbs-wrap">
               <div className="container">
                 <div className="breadcrumbs">
-                  <a href="index-2.html">Home</a>
-                  <span>About Us</span>
+                  <Link to="/">Home</Link>
+                  <span><Link to="/about">About Us</Link></span>
                 </div>
               </div>
             </div>
@@ -287,85 +287,7 @@ export default class About extends Component {
           </div>
 
 
-          <div className="section" style={{marginBottom:'50px'}}>
-            <div className="container">
-              <div className="title-wrap text-center">
-                <h2 className="h1">Our Board</h2>
-                <div className="h-sub ">Easylabs.org collaborates with an extensive
-                 group of clinicians, scientists and business professionals to provide insight, 
-                 direction and expertise to ensure our continued growth as a leader in healthcare management.</div>
-                <div className="h-decor" />
-              </div>
-              <div
-                className="row js-icn-carousel icn-carousel flex-column flex-sm-row text-center text-sm-left"
-                data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}]}'
-                style={{marginTop:'50px'}}
-              >
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                    <img
-                        src="images/content/about-07.jpg"
-                        className="w-100"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <h5 className="icn-text-title">Jana Tuhman</h5>
-                      <h6 className="icn-text-title">Medical Advisory Director</h6>
-                      <p>Jana Tuhman, M.S biochemistry & M.S biophysics. 
-                          We are delighted to have Jana join our advisory board. 
-                          With her expertise in evidence-based nutrition and lifestyle coaching, 
-                          Jana is the ideal resource to provide guidance and a scientific approach to preventative health.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                    <img
-                        src="images/content/about-08.png"
-                        className="w-100"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                    <h5 className="icn-text-title">Dr. Lohr</h5>
-                      <h6 className="icn-text-title">Co-Founder & CMO</h6>
-                      <p>Yaron Lohr, DC, CFSA, is both a specialist and an innovator in Chiropractic,
-                           Alternative Pain Management, Rehabilitation, and Functional Medicine. 
-                           As a pioneer in Chiropractic Medicine, he founded Posture Perfect Wellness 
-                           Center in 2006 to provide a comprehensive, synergistic approach to care for people
-                            in and around Dallas. As a Surgical First Assistant, Dr. Lohr assists Physicians and Surgeons 
-                            with cases in the fields of Sports Medicine, Orthopedics, Pain Management, Neurosurgery
-                             and Functional Medicine. </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                    <img
-                        src="images/content/about-09.jpg"
-                        className="w-100"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                    <h5 className="icn-text-title">Tom Petersil</h5>
-                      <h6 className="icn-text-title">Co-Founder and CEO</h6>
-                      <p>Tom Petersil has spent over 15 years with IBM and is bringing
-                           innovative approach to the idea of streamlining the processes
-                            and leveraging simple technologies  to solve complex problems
-                             in the Canadian Healthcare market.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
           {/*//section*/}
           {/*section*/}
           {/*<div className="section">
@@ -478,6 +400,90 @@ export default class About extends Component {
             </div>
           </div>*/}
           {/*//section*/}
+
+          <div className="section" style={{marginBottom:"40px"}}>
+  <div className="container">
+    <div className="title-wrap text-center">
+      <h2 className="h1">Our Board</h2>
+      <div className="h-sub ">Easylabs.org collaborates with an extensive
+                 group of clinicians, scientists and business professionals to provide insight, 
+                 direction and expertise to ensure our continued growth as a leader in healthcare management.</div>
+      <div className="h-decor" />
+    </div>
+    <div className="row specialist-carousel js-specialist-carousel">
+      <div className="col-sm-6 col-md-4">
+        <div className="doctor-box text-center">
+          <div className="doctor-box-photo">
+            <a href="doctor-page.html"><img src="images/content/about-07.jpg" className="img-fluid" alt="" /></a>
+          </div>
+          <h5 className="doctor-box-name"><a href="doctor-page.html">Jana Tuhman</a></h5>
+          <div className="doctor-box-position">Medical Advisory Director</div>
+          <div className="doctor-box-text">
+            <p>Jana Tuhman, M.S biochemistry & M.S biophysics. 
+                          We are delighted to have Jana join our advisory board. 
+                          With her expertise in evidence-based nutrition and lifestyle coaching, 
+                          Jana is the ideal resource to provide guidance and a scientific approach to preventative health.</p>
+          </div>
+          <div className="doctor-box-bottom">
+            <div className="doctor-box-phone"><i className="icon-telephone" /><a href="tel:+1-212-857-8103">+1-234-857-8103</a></div>
+            <div className="doctor-box-social">
+              <a href="https://www.facebook.com/" target="blank" className="hovicon"><i className="icon-facebook-logo" /></a>
+              <a href="mailto:info@dentco.net" className="hovicon"><i className="icon-black-envelope" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4">
+        <div className="doctor-box text-center">
+          <div className="doctor-box-photo">
+            <a href="doctor-page.html"><img src="images/content/about-08.png" className="img-fluid" alt="" /></a>
+          </div>
+          <h5 className="doctor-box-name"><a href="doctor-page.html">Dr. Lohr</a></h5>
+          <div className="doctor-box-position">Co-Founder & CMO</div>
+          <div className="doctor-box-text">
+            <p>Yaron Lohr, DC, CFSA, is both a specialist and an innovator in Chiropractic,
+                           Alternative Pain Management, Rehabilitation, and Functional Medicine. 
+                           As a pioneer in Chiropractic Medicine, he founded Posture Perfect Wellness 
+                           Center in 2006 to provide a comprehensive, synergistic approach to care for people
+                            in and around Dallas. As a Surgical First Assistant, Dr. Lohr assists Physicians and Surgeons 
+                            with cases in the fields of Sports Medicine, Orthopedics, Pain Management, Neurosurgery
+                             and Functional Medicine. </p>
+          </div>
+          <div className="doctor-box-bottom">
+            <div className="doctor-box-phone"><i className="icon-telephone" /><a href="tel:+1-816-941-7259">+1-816-941-7259</a></div>
+            <div className="doctor-box-social">
+              <a href="https://www.facebook.com/" target="blank" className="hovicon"><i className="icon-facebook-logo" /></a>
+              <a href="mailto:info@dentco.net" className="hovicon"><i className="icon-black-envelope" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-sm-6 col-md-4">
+        <div className="doctor-box text-center">
+          <div className="doctor-box-photo">
+            <a href="doctor-page.html"><img src="images/content/about-09.jpg" className="img-fluid" alt="" /></a>
+          </div>
+          <h5 className="doctor-box-name"><a href="doctor-page.html">Tom Petersil</a></h5>
+          <div className="doctor-box-position">Co-Founder and CEO</div>
+          <div className="doctor-box-text">
+            <p>Tom Petersil has spent over 15 years with IBM and is bringing
+                           innovative approach to the idea of streamlining the processes
+                            and leveraging simple technologies  to solve complex problems
+                             in the Canadian Healthcare market.</p>
+          </div>
+          <div className="doctor-box-bottom">
+            <div className="doctor-box-phone"><i className="icon-telephone" /><a href="tel:+1-219-756-6567">1-219-756-6567</a></div>
+            <div className="doctor-box-social">
+              <a href="https://www.facebook.com/" target="blank" className="hovicon"><i className="icon-facebook-logo" /></a>
+              <a href="mailto:info@dentco.net" className="hovicon"><i className="icon-black-envelope" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
 
         <Footer />
