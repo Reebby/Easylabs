@@ -48,39 +48,6 @@ export default class Header extends Component {
 					<div className="quickLinks-top js-quickLinks-top" />
 					<div className="js-quickLinks-wrap-m"></div>
 				</div>
-				{/* <div className="header-topline d-none d-lg-flex">
-					<div className="container">
-						<div className="row align-items-center">
-							<div className="col-auto d-flex align-items-center">
-								<div className="header-info">
-									<i className="icon-placeholder2" />
-									1560 Holden Street San Diego, CA 92139
-								</div>
-								<div className="header-phone">
-									<i className="icon-telephone" />
-									<a href="tel:1-847-555-5555">1-800-267-0000</a>
-								</div>
-								<div className="header-info">
-									<i className="icon-black-envelope" />
-									<a href="mailto:info@dentco.net">info@dentco.net</a>
-								</div>
-							</div>
-							<div className="col-auto ml-auto d-flex align-items-center">
-								<span className="header-social">
-									<a href="#" className="hovicon">
-										<i className="icon-facebook-logo-circle" />
-									</a>
-									<a href="#" className="hovicon">
-										<i className="icon-twitter-logo-circle" />
-									</a>
-									<a href="#" className="hovicon">
-										<i className="icon-google-plus-circle" />
-									</a>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div> */}
 				<div className="header-content">
 					<div className="container">
 						<div className="row align-items-lg-center">
@@ -92,9 +59,9 @@ export default class Header extends Component {
 								<span className="icon-menu" />
 							</button>
 							<div className="col-lg-auto col-lg-2 d-flex align-items-lg-center">
-								<a href="index-2.html" className="header-logo">
+								<Link to="/" className="header-logo">
 									<img src="/logo.png" alt="" className="img-fluid" />
-								</a>
+								</Link>
 							</div>
 							<div className="col-lg ml-auto header-nav-wrap">
 								<div className="header-nav js-header-nav">
@@ -105,9 +72,9 @@ export default class Header extends Component {
 										>
 											<ul className="navbar-nav">
 												<li className="nav-item">
-													<a className="nav-link" href="#">
+													<Link to="/about" className="nav-link">
 														About Us
-													</a>
+													</Link>
 												</li>
 												<li className="nav-item">
 													<a
@@ -157,7 +124,7 @@ export default class Header extends Component {
 														</li>
 														<li>
 															<a className="dropdown-item" href="#">
-																Schdule an Appointment
+																Schedule an Appointment
 															</a>
 														</li>
 													</ul>
@@ -178,13 +145,12 @@ export default class Header extends Component {
 														</li>
 														<li>
 															<a className="dropdown-item" href="#">
-																How it Works
+																How It Works
 															</a>
 														</li>
 														
 													</ul>
 												</li>
-												
 												<li className="nav-item dropdown">
 													<a
 														href="#"
@@ -205,8 +171,8 @@ export default class Header extends Component {
 															</a>
 														</li>
 														<li>
-															<a className="dropdown-item" href="blog-post-page.html">
-																Blog Single Post
+															<a className="dropdown-item" href="#">
+																What are the Medical Cornerstones
 															</a>
 														</li>
 													</ul>
@@ -220,14 +186,14 @@ export default class Header extends Component {
 										</div>
 									</nav>
 								</div>
-								<div className="header-search">
-									<form action="#" className="form-inline">
+								<div style={{marginTop: '-20px'}} className="header-search">
+									<div  className="form-inline">
 										<i className="icon-search" />
 										<input type="text" placeholder="Search" />
 										<button type="submit">
 											<i className="icon-search" />
 										</button>
-									</form>
+									</div>
 								</div>
 							</div>
 						</div>
