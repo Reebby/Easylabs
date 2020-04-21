@@ -13,9 +13,9 @@ import Appointment from './Pages/Appointment';
 import Testing from './Pages/Testing';
 import HowItWorks from './Pages/HowItWorks';
 import Statistics from './Pages/Statistics';
-import Cost from './Pages/Cost';
-import Cornerstones from './Pages/Cornerstones';
-
+import Interpretation1 from './Pages/Interpretation1';
+import Interpretation2 from './Pages/Interpretation2';
+import ComingSoon from './Pages/ComingSoon';
 
 function App() {
 	return (
@@ -33,8 +33,9 @@ function App() {
 				<Route path="/testing" component={Testing} />
 				<Route path="/howitworks" component={HowItWorks} />
 				<Route path="/statistics" component={Statistics} />
-				<Route path="/cost" component={Cost} />
-				<Route path="/cornerstones" component={Cornerstones} />
+				<Route path="/interpretation1" component={Interpretation1} />
+				<Route path="/interpretation2" component={Interpretation2} />
+				<Route path="/coming-soon" component={ComingSoon} />
 			</Switch>
 			</ScrollToTop>
 		</BrowserRouter>

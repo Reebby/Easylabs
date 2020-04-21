@@ -58,7 +58,7 @@ export default class Header extends Component {
 							>
 								<span className="icon-menu" />
 							</button>
-							<div className="col-lg-auto col-lg-2 d-flex align-items-lg-center">
+							<div className="col-lg-auto col-lg-1 d-flex align-items-lg-center">
 								<Link to="/" className="header-logo">
 									<img src="/logo.png" alt="" className="img-fluid" />
 								</Link>
@@ -75,6 +75,28 @@ export default class Header extends Component {
 													<Link to="/about" className="nav-link">
 														About Us
 													</Link>
+												</li>
+												<li className="nav-item">
+													<a
+														href="#"
+														className="nav-link dropdown-toggle"
+														data-toggle="dropdown"
+													>
+														Interpretations Menu
+													</a>
+													<ul className="dropdown-menu">
+														<li>
+															<Link to="/interpretation1" className="dropdown-item" >
+															Modern Medicine Expert
+															</Link>
+														</li>
+														<li>
+															<Link to="/interpretation2" className="dropdown-item">
+															Complimentary Medicine Expert
+															</Link>
+														</li>
+														
+													</ul>
 												</li>
 												<li className="nav-item">
 													<a

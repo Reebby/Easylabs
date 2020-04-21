@@ -16,7 +16,7 @@ export default class Home extends Component {
 		};
 	}
 
-	componentDidMount = () => {	
+	componentDidMount = () => {
 		this.setState({ cartItems: [] });
 	};
 
@@ -44,12 +44,245 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div>
-
 				<Header />
 				{/*//header*/}
 				<div className="page-content">
 					{/*section slider*/}
-				<div className="section mt-0"><div className="quickLinks-wrap js-quickLinks-wrap-d d-none d-lg-flex"><div className="sticky-wrapper"><div className="quickLinks js-quickLinks closed"><div className="container"><div className="row no-gutters"><div className="col"><a href="#" className="link"><i className="icon-price-tag" /><span> Interpretations Menu</span></a><div className="link-drop"><h5 className="link-drop-title"><i className="icon-price-tag" />Interpretations Menu</h5><table className="row-table"><tbody><tr><td>Endocrinologist Interpretation</td><td>$3</td></tr><tr><td>Fertility Interpretation</td><td>$3</td></tr><tr><td>Bio-Hacking</td><td>$3</td></tr><tr><td>Anti Aging Interpretation</td><td>Free</td></tr><tr><td>Standard Interpretation</td><td>Free</td></tr></tbody></table></div></div><div className="col col-close"><a href="#" className="js-quickLinks-close"><i className="icon-top" data-toggle="tooltip" data-placement="top" title data-original-title="Close panel" /></a></div></div></div><div className="quickLinks-open js-quickLinks-open"><span data-toggle="tooltip" data-placement="left" title data-original-title="Open panel">+</span></div></div></div></div><div id="mainSliderWrapper"><div className="loading-content disable"><div className="loader-dna"><column><dot /><dot /><dot /><dot /><dot /><dot /><dot /><dot /></column><column><dash /><dash /><dash /><dash /><dash /><dash /><dash /><dash /></column><column><dot /><dot /><dot /><dot /><dot /><dot /><dot /><dot /></column></div></div><div className="main-slider mb-0 arrows-white arrows-bottom slick-initialized slick-slider" id="mainSlider" data-slick="{&quot;arrows&quot;: false, &quot;dots&quot;: true}"><div aria-live="polite" className="slick-list draggable" tabIndex={0}><div className="slick-track" style={{opacity: 1, width: '2688px'}}><div className="slide slick-slide slick-active" data-slick-index={0} aria-hidden="false" style={{width: '1344px', position: 'relative', left: '0px', top: '0px', zIndex: 900, opacity: 1}}><div className="img--holder" data-bg="images/content/slider/slide-02.jpg" style={{backgroundImage: 'url("images/content/slider/slide-02.jpg")'}} /><div className="slide-content center"><div className="vert-wrap container"><div className="vert"><div className="container"><div className="slide-txt1 text-no-uppercase" data-animation="fadeInDown" data-animation-delay="1s">We Educate Patients for<br /><b>Preventative Health</b></div><div className="slide-txt2 text-no-uppercase" data-animation="fadeInUp" data-animation-delay="1.5s" /><div className="slide-btn"><a href="https://easylabs.org/patient/report/" target="_blank" className="btn link-inside" data-animation="fadeInUp" data-animation-delay="2s"><i className="icon-right-arrow" /><span>Get your free results interpretations</span><i className="icon-right-arrow" /></a></div></div></div></div></div></div><div className="slide slick-slide" data-slick-index={1} aria-hidden="true" style={{width: '1344px', position: 'relative', left: '-1344px', top: '0px', zIndex: 800, opacity: 0}}><div className="img--holder" data-bg="images/content/slider/slide-01.jpg" style={{backgroundImage: 'url("images/content/slider/slide-01.jpg")'}} /><div className="slide-content center"><div className="vert-wrap container"><div className="vert"><div className="container"><div className="slide-txt1 text-no-uppercase" data-animation="fadeInDown" data-animation-delay="1s">We Empower Clinicians<br /><b>with Smart Lab Data</b></div><div className="slide-txt2 text-no-uppercase" data-animation="fadeInUp" data-animation-delay="1.5s" /><div className="slide-btn"><a href="https://easylabs.org/patient/report/" target="_blank" className="btn link-inside" data-animation="fadeInUp" data-animation-delay="2s"><i className="icon-right-arrow" /><span>Get your free results interpretations</span><i className="icon-right-arrow" /></a></div></div></div></div></div></div></div></div><ul className="slick-dots" style={{}}><li className="slick-active" aria-hidden="false"><button type="button" data-role="none">1</button></li><li aria-hidden="true" className><button type="button" data-role="none">2</button></li></ul></div></div></div>
+					<div className="section mt-0">
+						<div className="quickLinks-wrap js-quickLinks-wrap-d d-none d-lg-flex">
+							<div className="sticky-wrapper">
+								<div className="quickLinks js-quickLinks closed">
+									<div className="container">
+										<div className="row no-gutters">
+											<div className="col">
+												<a href="#" className="link">
+													<i className="icon-price-tag" />
+													<span> Interpretations Menu</span>
+												</a>
+												<div className="link-drop">
+													<h5 className="link-drop-title">
+														<i className="icon-price-tag" />
+														Interpretations Menu
+													</h5>
+													<table className="row-table">
+														<tbody>
+															<tr>
+																<td>Endocrinologist Interpretation</td>
+																<td>$3</td>
+															</tr>
+															<tr>
+																<td>Fertility Interpretation</td>
+																<td>$3</td>
+															</tr>
+															<tr>
+																<td>Bio-Hacking</td>
+																<td>$3</td>
+															</tr>
+															<tr>
+																<td>Anti Aging Interpretation</td>
+																<td>Free</td>
+															</tr>
+															<tr>
+																<td>Standard Interpretation</td>
+																<td>Free</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div className="col col-close">
+												<a href="#" className="js-quickLinks-close">
+													<i
+														className="icon-top"
+														data-toggle="tooltip"
+														data-placement="top"
+														title
+														data-original-title="Close panel"
+													/>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div className="quickLinks-open js-quickLinks-open">
+										<span
+											data-toggle="tooltip"
+											data-placement="left"
+											title
+											data-original-title="Open panel"
+										>
+											+
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="mainSliderWrapper">
+							<div className="loading-content disable">
+								<div className="loader-dna">
+									<column>
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+									</column>
+									<column>
+										<dash />
+										<dash />
+										<dash />
+										<dash />
+										<dash />
+										<dash />
+										<dash />
+										<dash />
+									</column>
+									<column>
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+										<dot />
+									</column>
+								</div>
+							</div>
+							<div
+								className="main-slider mb-0 arrows-white arrows-bottom slick-initialized slick-slider"
+								id="mainSlider"
+								data-slick='{"arrows": false, "dots": true}'
+							>
+								<div aria-live="polite" className="slick-list draggable" tabIndex={0}>
+									<div className="slick-track" style={{ opacity: 1, width: '2688px' }}>
+										<div
+											className="slide slick-slide slick-active"
+											data-slick-index={0}
+											aria-hidden="false"
+											style={{
+												width: '1344px',
+												position: 'relative',
+												left: '0px',
+												top: '0px',
+												zIndex: 900,
+												opacity: 1,
+											}}
+										>
+											<div
+												className="img--holder"
+												data-bg="images/content/slider/slide-02.jpg"
+												style={{ backgroundImage: 'url("images/content/slider/slide-02.jpg")' }}
+											/>
+											<div className="slide-content center">
+												<div className="vert-wrap container">
+													<div className="vert">
+														<div className="container">
+															<div
+																className="slide-txt1 text-no-uppercase"
+																data-animation="fadeInDown"
+																data-animation-delay="1s"
+															>
+																We Educate Patients for
+																<br />
+																<b>Preventative Health</b>
+															</div>
+															<div
+																className="slide-txt2 text-no-uppercase"
+																data-animation="fadeInUp"
+																data-animation-delay="1.5s"
+															/>
+															<div className="slide-btn">
+																<a
+																	href="https://easylabs.org/patient/report/"
+																	target="_blank"
+																	className="btn link-inside"
+																	data-animation="fadeInUp"
+																	data-animation-delay="2s"
+																>
+																	<i className="icon-right-arrow" />
+																	<span>Get your free results interpretations</span>
+																	<i className="icon-right-arrow" />
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											className="slide slick-slide"
+											data-slick-index={1}
+											aria-hidden="true"
+											style={{
+												width: '1344px',
+												position: 'relative',
+												left: '-1344px',
+												top: '0px',
+												zIndex: 800,
+												opacity: 0,
+											}}
+										>
+											<div
+												className="img--holder"
+												data-bg="images/content/slider/slide-01.jpg"
+												style={{ backgroundImage: 'url("images/content/slider/slide-01.jpg")' }}
+											/>
+											<div className="slide-content center">
+												<div className="vert-wrap container">
+													<div className="vert">
+														<div className="container">
+															<div
+																className="slide-txt1 text-no-uppercase"
+																data-animation="fadeInDown"
+																data-animation-delay="1s"
+															>
+																We Empower Clinicians
+																<br />
+																<b>with Smart Lab Data</b>
+															</div>
+															<div
+																className="slide-txt2 text-no-uppercase"
+																data-animation="fadeInUp"
+																data-animation-delay="1.5s"
+															/>
+															<div className="slide-btn">
+																<a
+																	href="https://easylabs.org/patient/report/"
+																	target="_blank"
+																	className="btn link-inside"
+																	data-animation="fadeInUp"
+																	data-animation-delay="2s"
+																>
+																	<i className="icon-right-arrow" />
+																	<span>Get your free results interpretations</span>
+																	<i className="icon-right-arrow" />
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul className="slick-dots" style={{}}>
+									<li className="slick-active" aria-hidden="false">
+										<button type="button" data-role="none">
+											1
+										</button>
+									</li>
+									<li aria-hidden="true" className>
+										<button type="button" data-role="none">
+											2
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
 					{/*//section slider*/}
 					{/*section departments*/}
@@ -141,10 +374,8 @@ export default class Home extends Component {
 								</h2>
 								<div className="h-decor" />
 							</div>
-							<div className="row">
-                                 
-							</div>
-							
+							<div className="row"></div>
+
 							<div className="nav nav-pills-icons" role="tablist">
 								<a className="nav-link active" data-toggle="pill" role="tab">
 									<i className="icon-molecular" />
@@ -156,12 +387,9 @@ export default class Home extends Component {
 								</a>
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-micro" />
-									<span>
-									Cutting Edge Diagnostics 
-
-									</span>
+									<span>Cutting Edge Diagnostics</span>
 								</a>
-							
+
 								<a className="nav-link" data-toggle="pill" role="tab">
 									<i className="icon-testtube" />
 									<span>
@@ -209,16 +437,10 @@ export default class Home extends Component {
 												</h2>
 											</div>
 											<p>
-											
 												We believe in providing the best possible care to all our existing
 												patients and welcome new patients to sample.
-												
 											</p>
-											<div
-												className="contact-form"
-												id="contactForm"
-												noValidate="novalidate"
-											>
+											<div className="contact-form" id="contactForm" noValidate="novalidate">
 												<div className="successform">
 													<p>Your message was sent successfully!</p>
 												</div>

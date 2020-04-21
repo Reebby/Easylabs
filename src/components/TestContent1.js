@@ -1,6 +1,6 @@
 import React from "react";
 
-const TestContent1 = ({name, email, id}) => {
+const TestContent1 = () => {
   return (
     <div className='tc dib bg-light-green br3 pa3 ma2 grow bw2 shadow-5'>
        <div className="col-md-8 col-lg-9 mt-4 mt-md-0 ">
