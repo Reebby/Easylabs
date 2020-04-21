@@ -13,6 +13,8 @@ import Appointment from './Pages/Appointment';
 import Testing from './Pages/Testing';
 import HowItWorks from './Pages/HowItWorks';
 import Statistics from './Pages/Statistics';
+import Cost from './Pages/Cost';
+import Cornerstones from './Pages/Cornerstones';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
 				<Route path="/testing" component={Testing} />
 				<Route path="/howitworks" component={HowItWorks} />
 				<Route path="/statistics" component={Statistics} />
+				<Route path="/cost" component={Cost} />
+				<Route path="/cornerstones" component={Cornerstones} />
 			</Switch>
 			</ScrollToTop>
 		</BrowserRouter>

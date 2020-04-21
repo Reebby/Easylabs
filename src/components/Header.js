@@ -167,14 +167,14 @@ export default class Header extends Component {
 															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/cost" className="dropdown-item" >
 																Health Care Cost
-															</a>
+															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/cornerstones" className="dropdown-item" >
 																What are the Medical Cornerstones
-															</a>
+															</Link>
 														</li>
 													</ul>
 												</li>
