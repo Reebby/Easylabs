@@ -13,6 +13,7 @@ import Appointment from './Pages/Appointment';
 import Testing from './Pages/Testing';
 import HowItWorks from './Pages/HowItWorks';
 import Statistics from './Pages/Statistics';
+import Interpretation from './Pages/Interpretation';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 				<Route path="/testing" component={Testing} />
 				<Route path="/howitworks" component={HowItWorks} />
 				<Route path="/statistics" component={Statistics} />
+				<Route path="/interpretation" component={Interpretation} />
 			</Switch>
 			</ScrollToTop>
 		</BrowserRouter>

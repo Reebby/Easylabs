@@ -1,16 +1,17 @@
 import React from "react";
 
-const TestContent2 = ({name, email, id}) => {
+const TestContent2 = () => {
   return (
     <div className='tc dib bg-light-green br3 pa3 ma2 grow bw2 shadow-5'>
        <div className="col-md-8 col-lg-9 mt-4 mt-md-0 ">
-    
+       <div className="title-wrap" >
+          <h1 >All chronic conditions warrant some form of investigation</h1></div>
+        <div className="service-img">
+          <img src="images/content/service-big-01.html" className="img-fluid" alt="" />
+        </div>
         <div className="pt-2 pt-md-4">
-            
-    
-          <h3>All chronic conditions warrant some form of investigation</h3>
-          <div className="mt-0 mt-lg-4"  />
-          <ul className="marker-list-md" style={{marginBottom:'-40px'}}>
+
+          <ul className="marker-list-md" style={{marginTop:'-50px', marginBottom:'30px'}}>
             
                 <li>Chronic Fatigue</li>
                 <li>Chronic Pain</li>
