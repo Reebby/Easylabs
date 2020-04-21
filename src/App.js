@@ -10,6 +10,9 @@ import Laboratories from './Pages/Laboratories';
 import Background from './Pages/Background';
 import Start from './Pages/Start';
 import Appointment from './Pages/Appointment';
+import Testing from './Pages/Testing';
+import HowItWorks from './Pages/HowItWorks';
+import Statistics from './Pages/Statistics';
 
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
 				<Route path="/background" component={Background} />
 				<Route path="/start" component={Start} />
 				<Route path="/appointment" component={Appointment} />
+				<Route path="/testing" component={Testing} />
+				<Route path="/howitworks" component={HowItWorks} />
+				<Route path="/statistics" component={Statistics} />
 			</Switch>
 			</ScrollToTop>
 		</BrowserRouter>

@@ -140,14 +140,14 @@ export default class Header extends Component {
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/testing" className="dropdown-item" >
 																Who Should Be Tested
-															</a>
+															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/howitworks" className="dropdown-item">
 																How It Works
-															</a>
+															</Link>
 														</li>
 														
 													</ul>
@@ -162,9 +162,9 @@ export default class Header extends Component {
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="statistics" className="dropdown-item" href="#">
 																Health Statistics
-															</a>
+															</Link>
 														</li>
 														<li>
 															<a className="dropdown-item" href="#">

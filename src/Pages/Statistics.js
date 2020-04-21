@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default class Background extends Component {
+export default class Statistics extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -57,10 +57,12 @@ export default class Background extends Component {
       <div>
         <Header />
         <div className="page-content"> 
-        <div className="section bg-grey  mt-md-0">
+          
+          {/*//section*/}
+          <div className="section bg-grey  mt-md-0">
   <div className="container">
     <div className="title-wrap text-center">
-      <h2 className="h1 double-title double-title--white double-title--center double-title--vcenter" data-title="  Background"><span>Background<span className="clearfix d-sm-none" /></span></h2>
+      <h2 className="h1 double-title double-title--white double-title--center double-title--vcenter" data-title="  The Facts"><span>The Facts<span className="clearfix d-sm-none" /></span></h2>
       <div className="h-decor" />
     </div>
    
@@ -68,122 +70,125 @@ export default class Background extends Component {
       <div id="tab-A" className="tab-pane fade show active" role="tabpanel">
         <div className="tab-bg"><img src="images/content/bg-map.png" alt="" /></div>
         <div className="row">
-          <div className="col-md-6 h-100 mb-2 mb-md-0">
-            <img src="images/content/index-img-01.jpg" alt="" className="img-fluid" />
-          </div>
+          
           <div className="col-md-6">
             <div className="pt-xl-1">
-              <h3>Common Biomarker Testing coupled with insights that are clear and actionable</h3>
-              <p>With our advanced laboratory interpretations designed by multiple specialists with the unique perspective from their field of expertise, Easylabs.org can help unlock the mysteries of the body using clues found in the blood. We present diagnostic data in an easy-to-read dashboard that provides patients and even doctors with meaningful, actionable options.</p>
-              <ul className="marker-list-md">
-                <li>Unlock the mysteries of the body</li>
-                <li>Easy to read diagnostic data</li>
-                <li>We provide patients and  doctors with meaningful, actionable options</li>
-               
-              </ul>
+              <h3>Health Statistics</h3>
               
+              <ul className="marker-list-md">
+
+                <li>1 in 3 have been diagnosed with CARDIOVASCULAR DISEASE</li>
+                <li>1 in 3 are DIABETIC or PREDIABETIC</li>
+                <li>1 in 4 have been diagnosed with METABOLIC SYNDROME</li>
+                <li>1 in 5 have been diagnosed with FATTY LIVER DISEASE</li>
+                <li>70% are OVERWEIGHT or OBESE</li>
+                <li>Heart disease causes over 1 million deaths a year in the U.S. alone—or an average of about 2600 deaths each day.</li>
+               
+              </ul> <br/>
+              <p>At Easylabs.org we strive for early detection to give clinicians and patients the tools they need to uncover hidden risk. <br/>
+
+Our sophisticated and state-of-the-art analysis and testing give doctors and patients the information to form a precise diagnosis.
+ From there, we also pass along to patients the self-care techniques they can use to help themselves, heal themselves and, 
+ in the process, give the health care system a fighting chance.</p>
             </div>
+          </div>
+          <div className="col-md-6 h-100 mb-2 mb-md-0">
+            <img src="images/content/index-img-01.jpg" alt="" className="img-fluid" />
           </div>
         </div>
       </div>
     </div></div></div>
 
-
-
-
           {/*section*/}
-          <div  style={{padding: '50px', marginTop:"-40px"}}>
-  <div className=" mt-lg-8 row no-gutters col-sm-9"  />
-  <h2 className="ml-2  " style={{textAlign:'center'}} >A New and Novel Approach</h2>
-  <div className="mt-0 mt-lg-4" />
-
-  <div className="mt-3 " />
-  <ul className="numbered-list-lg ml-2">
-      <p>Blood analysis tests have been around for years. They’re a classic method for finding out more about a patient’s health. 
-           For the first time, we have the ability to provide the perspective a patient would get from the unique specialists of their 
-           choice prior to going through the process and cost of meeting in person. Patients can get an expert perspective their lab results, 
-           any time anywhere and be empowered to take the next step needed to optimize their health. Recommendations on nutrition, 
-           supplements, lifestyle changes or even seeing an expert, are provided based on your specific lab results profile. Done right, 
-           doctors see increased referrals, patients are more health aware, arrive at the appointment ready to cooperate and both compliance 
-           and overall satisfaction are remarkably improved.  </p>
-
-           <p>As a doctor, whether you want to survey a patient’s health, or need a second opinion on a suspected diagnosis, Easylabs.org testing gives you the confirmation you need to support a confident diagnosis.</p>
-    <p>Our advanced analysis provides useful, actionable information that leads to significant improvement in patient outcomes.</p>
-  </ul>
-  <div className="mt-3 " />
-  
-</div>
-
-         
-          
 
 
-    <div className="section bg-norepeat bg-md-none section-top-padding" style={{backgroundImage: 'url(images/bg-top-left.png)'}}>
+          <div className="section bg-norepeat bg-md-none section-top-padding" style={{backgroundImage: 'url(images/bg-top-left.png)'}}>
   <div className="container-fluid px-0 over-visible">
     <div className="row">
       <div className="col-lg-6">
         <div className="services-tab-wrap float-right">
           <div className="title-wrap-alt text-center text-md-left">
             
-            <h2 className="h1 double-title double-title--top-md" data-title="Progress"><span>Baseline for Tracking <span className="theme-color">Progress </span></span></h2>
+            <h2 className="h1 double-title double-title--top-md" data-title="Patient Risk"><span>Patient <span className="theme-color">Risk </span></span></h2>
           </div>
-          <p>Not only are Easylabs’ comprehensive blood panels a reliable way to measure a patient’s health, the same data can track patient progress. Tests are often repeated every three months to track
-               how well your patient is responding to care as they continue along the road to complete, 
-               whole-body health. <br/>Who should receive advanced testing? <br/> Anyone with Established NCEP ATP III risk factors below or the following signs or symptoms:</p>
+         
           <div className="row">
             <div className="col-sm-auto">
               <ul className="marker-list-md">
-              
-                <li>High blood pressure</li> 
-                <li>High cholesterol</li>
+
+                <li>In 1970, 45% of Americans were overweight or obese</li> 
+                <li>In 2015, 65% of Americans were overweight or obese</li>
                 <li>History of cardiovascular disease </li>
-                <li>History of stroke </li>
-                <li>Tobacco smoker</li>
-                <li>Physical inactivity</li>
-                <li>Overweight and Obesity</li>
-                <li>Pre-diabetes or diabetes</li>
-            <li>History of thrombosis or diabetes</li>
-           
-                <li>Age >45</li>
+                <li>By 2020, 75% of Americans are projected to be overweight or obese </li>
+                <li>A 1% reduction in the U.S. Body Mass Index could prevent 2.4 million <br/>cases of Type 2 diabetes, saving $16 billion.</li>
+                
               </ul>
             </div>
-            <div className="col-sm-auto mt-1 mt-md-0">
-              <ul className="marker-list-md">
-            
-                <li>Chronic Fatigue</li>
-                <li>Chronic Pain</li>
-                <li>Mood Disorders</li>
-                <li>Thyroid disorders</li>
-                <li>Chronic GI issues</li>
-                <li>Autoimmune diseases</li>
-                <li>Neurological diseases</li>
-                <li>Respiratory diseases</li>
-                <li>Reproductive issues</li>
-              </ul>
-            </div>
+            <p>Not only are Easylabs’ comprehensive blood panels a reliable way to measure a patient’s health, the same data can track patient progress. Tests are often repeated every three months to track
+               how well your patient is responding to care as they continue along the road to complete, 
+               whole-body health. <br/>Who should receive advanced testing? <br/> Anyone with Established NCEP ATP III risk factors below or the following signs or symptoms:</p>
           </div>
         </div>
       </div>
-      <div className="col-lg-6 position-relative">
-        <div className="ml-xl-6">
-          <img src="images/content/index-img-02.jpg" className="w-sm-100" alt="" />
-        </div>
-        
-      </div>
+     
     </div>
   </div>
 </div>
 
 
-        
 
 
-          {/*section*/}
-         
+
+
+          <div style={{padding: '50px', marginTop:"-10px", marginBottom:"-50px"}}  className="section bg-grey  mt-md-0">
+  <div className="mt-3 mt-lg-8 row no-gutters col-sm-9 "  />
+  <h2 className="h1 double-title double-title--white double-title--center double-title--vcenter" data-title="  The Facts" style={{textAlign: 'center'}}><span>Health Statistics<span className="clearfix d-sm-none" /></span></h2>
+  <div className="mt-0 mt-lg-4" />
+
+  <div className="mt-3 " />
+  <ul className="numbered-list-lg ml-2">
+    <li>Most people have access to their laboratory results, usually blood or urine and if you don’t have a printout, you are likely to find it online so the data is literally in your hands. Now imagine being able to select any expert to review the results with you at any time and at a cost that won’t even factor into the decision. This is what we offer, here and now and more affordably than you may imagine.</li>
+    <li>With healthcare being slow to catch up with the remarkable technological advancements we’ve seen in recent years, Easylabs is here to bridge the gap. </li>
+    <li>We know that blood and urine contain the insights vital to the understanding of how each unique person’s biochemistry responds to and interact with environmental factors including the foods we eat, chemicals we consume (coffee, alcohol) and environments we work and live in. There is a wealth of information in every lep report if only we could really understand it all.</li>
+    <li>With Easylabs.org , you simply enter or upload the values from your lab results into our system and select the expert who’s opinion you wish to see. Family Doctor? Endocrinologist? Fertility specialist? Just click and within seconds your report will be analyzed and results interpreted using those expertise. </li>
+   <li> Maybe complimentary medicine is of interest to you these days, Naturopathy, Integrative and functional medicine are just some of the few becoming more mainstream than ever with specialists in those fields charging hundreds per session and often with no near term availability. With a click of the mouse you can access those and other perspectives right now and start making changes even prior to meeting with your specialist.</li>
+  <li> Cutting edge early adopter? We have just the thing for you, Bio-Hacking and Anti-Aging are two hot interpretations that you may select from on your way to running that marathon or beating back mother time!</li>
+  </ul>
+  
+</div>
 
          
           
           
+          <div className="section">
+            <div className="container-fluid px-0">
+              <div
+                className="banner-center bg-cover"
+                style={{
+                  backgroundImage: "url(images/content/banner-center.jpg)",
+                }}
+              >
+                <div className="banner-center-caption text-center">
+                  <div className="banner-center-text1">
+                    Get your free result interpretations
+                  </div>
+                  <div className="banner-center-text2">
+                    We strive to provide interpretations that are easy to understand
+                  </div>
+                  <a
+                    href="#"
+                    className="btn btn-white mt-5"
+                    data-toggle="modal"
+                    data-target="#modalBookingForm"
+                  >
+                    <i className="icon-right-arrow" />
+                    <span>Start Interpretation</span>
+                    <i className="icon-right-arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
          
