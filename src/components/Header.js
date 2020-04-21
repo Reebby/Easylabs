@@ -85,20 +85,21 @@ export default class Header extends Component {
 														Services
 													</a>
 													<ul className="dropdown-menu">
+													
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/laboratories" className="dropdown-item" >
 																Laboratories
-															</a>
+															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/doctors"className="dropdown-item" >
 																Doctors
-															</a>
+															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/patients" className="dropdown-item">
 																Patients
-															</a>
+															</Link>
 														</li>
 														
 													</ul>
@@ -113,19 +114,19 @@ export default class Header extends Component {
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/background" className="dropdown-item" >
 																Background
-															</a>
+															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/start" className="dropdown-item" >
 																Getting Started
-															</a>
+															</Link>
 														</li>
 														<li>
-															<a className="dropdown-item" href="#">
+															<Link to="/appointment"className="dropdown-item" >
 																Schedule an Appointment
-															</a>
+															</Link>
 														</li>
 													</ul>
 												</li>
