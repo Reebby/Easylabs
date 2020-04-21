@@ -4,27 +4,18 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import InterpretationCard from '../components/InterpretationCard';
 
-export default class Patients extends Component {
+export default class Interpretation1 extends Component {
 	constructor(props) {
         super(props);
         this.modernPlan = [
-            {plan: "Standard Interpretation", cost: 0},
-            {plan: "Endocrinologist Interpretation", cost: 3},
-            {plan: "Fertility Interpretation", cost: 3},
-            {plan: "Women's Health Interpretation", cost: 3},
-            {plan: "Men's Health Interpretation", cost: 0},
-            {plan: "Oncology Interpretation", cost: 3},
-            {plan: "Dermatology Interpretation", cost: 3},
+            {name: "Standard Interpretation", cost: 0},
+            {name: "Endocrinologist Interpretation", cost: 3},
+            {name: "Fertility Interpretation", cost: 3},
+            {name: "Women's Health Interpretation", cost: 3},
+            {name: "Men's Health Interpretation", cost: 0},
+            {name: "Oncology Interpretation", cost: 3},
+            {name: "Dermatology Interpretation", cost: 3},
         ];
-        this.modernPlan = [
-            {plan: "Standard Interpretation", cost: 0},
-            {plan: "Endocrinologist Interpretation", cost: 3},
-            {plan: "Fertility Interpretation", cost: 3},
-            {plan: "Women's Health Interpretation", cost: 3},
-            {plan: "Men's Health Interpretation", cost: 0},
-            {plan: "Oncology Interpretation", cost: 3},
-            {plan: "Dermatology Interpretation", cost: 3},
-        ]
 		this.state = {
 			mobile_menu: false,
 			loading: false,
@@ -65,22 +56,29 @@ export default class Patients extends Component {
 			<div>
 				<Header />
 				<div className="page-content">
-					<div style={{ padding: '50px', marginTop: '-50px', marginBottom: '-50px' }}>
+					<div style={{ padding: '70px', marginTop: '-50px', marginBottom: '-50px' }}>
 						<div className="mt-3 mt-lg-8 row no-gutters col-sm-9" />
-						<h3 className="ml-2" style={{ textAlign: 'center' }}>
+						<h2 className="ml-2" style={{ textAlign: 'center' }}>
 							{' '}
 							Select a modern medicine expert
-						</h3>
+						</h2>
 						<div className="mt-0 mt-lg-4" />
 
 						<div className="container">
-							<div className="row mt-lg-4">
-								<div className="col-md-6 col-xl-6 pr-xl-7">
-									<div className="department-tabs2">
-										<InterpretationCard />
+							<div className="row ">
+                            {
+                                this.modernPlan.map((data) => (
+                                    <div className="col-md-4 col-xl-4">
+									<div className="department">
+										<InterpretationCard plan={data}/>
 									</div>
 								</div>
+                                ))
+                            }
+								
+                               
 							</div>
+                            
 						</div>
 					</div>
 				</div>
