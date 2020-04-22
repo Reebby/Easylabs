@@ -63,7 +63,7 @@ export default class InterpretationMain extends Component {
 							<div className="title-wrap text-center">
 								<h2
 									className="h1 double-title double-title--white double-title--center double-title--vcenter"
-									data-title="  The Facts"
+									data-title="Interpretations"
 								>
 									<span>
 										Interpretations Menu

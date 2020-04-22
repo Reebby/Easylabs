@@ -48,7 +48,15 @@ export default class Home extends Component {
 				{/*//header*/}
 				<div className="page-content">
 					{/*section slider*/}
-					<div className="section mt-0">
+					<div
+						style={{
+							backgroundImage: 'url("images/content/slider/slide-02.jpg")',
+							backgroundSize: 'cover',
+							backgroundPosition: 'center',
+							backgroundRepeat: 'no-repeat',
+						}}
+						className="section mt-0"
+					>
 						<div className="quickLinks-wrap js-quickLinks-wrap-d d-none d-lg-flex">
 							<div className="sticky-wrapper">
 								<div className="quickLinks js-quickLinks closed">
@@ -59,7 +67,6 @@ export default class Home extends Component {
 													<i className="icon-price-tag" />
 													<span> Interpretations Menu</span>
 												</Link>
-												
 											</div>
 											<div className="col col-close">
 												<a href="#" className="js-quickLinks-close">
@@ -128,9 +135,9 @@ export default class Home extends Component {
 								data-slick='{"arrows": false, "dots": true}'
 							>
 								<div aria-live="polite" className="slick-list draggable" tabIndex={0}>
-									<div className="slick-track" >
+									<div className="slick-track">
 										<div
-											className="slide slick-slide slick-active"
+											className=""
 											data-slick-index={0}
 											aria-hidden="false"
 											style={{
@@ -142,11 +149,7 @@ export default class Home extends Component {
 												opacity: 1,
 											}}
 										>
-											<div
-												className="img--holder"
-												data-bg="images/content/slider/slide-02.jpg"
-												style={{ backgroundImage: 'url("images/content/slider/slide-02.jpg")' }}
-											/>
+											<div className="img--holder" data-bg="images/content/slider/slide-02.jpg" />
 											<div className="slide-content center">
 												<div className="vert-wrap container">
 													<div className="vert">
@@ -183,7 +186,7 @@ export default class Home extends Component {
 												</div>
 											</div>
 										</div>
-										<div
+										{/* <div
 											className="slide slick-slide"
 											data-slick-index={1}
 											aria-hidden="true"
@@ -236,7 +239,7 @@ export default class Home extends Component {
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> */}
 									</div>
 								</div>
 
