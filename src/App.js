@@ -15,6 +15,7 @@ import HowItWorks from './Pages/HowItWorks';
 import Statistics from './Pages/Statistics';
 import Interpretation1 from './Pages/Interpretation1';
 import Interpretation2 from './Pages/Interpretation2';
+import InterpretationMain from './Pages/InterpretationMain';
 import ComingSoon from './Pages/ComingSoon';
 import Cost from './Pages/Cost';
 import Cornerstones from './Pages/Cornerstones';
@@ -38,6 +39,7 @@ function App() {
 				<Route path="/statistics" component={Statistics} />
 				<Route path="/interpretation1" component={Interpretation1} />
 				<Route path="/interpretation2" component={Interpretation2} />
+				<Route path="/interpretations_menu" component={InterpretationMain} />
 				<Route path="/coming-soon" component={ComingSoon} />
 				<Route path="/cost" component={Cost} />
 				<Route path="/cornerstones" component={Cornerstones} />

@@ -1,287 +1,314 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import AboutCard from '../components/AboutCard';
 export default class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mobile_menu: false,
-      loading: false,
-      redirectToPhone: false,
-      home: "active",
-      showcart: "",
-      cartItems: [],
-    };
-  }
+	constructor(props) {
+		super(props);
+		this.teams = [
+			{
+				name: 'Jana Tuhman',
+				about: `Jana Tuhman, M.S biochemistry & M.S biophysics. We are delighted to have
+      Jana join our advisory board. With her expertise in evidence-based
+      nutrition and lifestyle coaching, Jana is the ideal resource to provide
+      guidance and a scientific approach to preventative health.`,
+				info: ['linkedIn'],
+				image: 'images/content/about-07.jpg',
+			},
+			{
+				name: 'Dr. Lohr',
+				about: `	Yaron Lohr, DC, CFSA, is both a specialist and an innovator in
+      Chiropractic, Alternative Pain Management, Rehabilitation, and
+      Functional Medicine. As a pioneer in Chiropractic Medicine, he founded
+      Posture Perfect Wellness Center in 2006 to provide a comprehensive,
+      synergistic approach to care for people in and around Dallas. As a
+      Surgical First Assistant, Dr. Lohr assists Physicians and Surgeons with
+      cases in the fields of Sports Medicine, Orthopedics, Pain Management,
+      Neurosurgery and Functional Medicine`,
+				info: ['linkedIn'],
+				image: 'images/content/about-08.jpg',
+			},
+			{
+				name: 'Tom Petersil',
+				about: `Tom Petersil has spent over 15 years with IBM and is bringing innovative
+      approach to the idea of streamlining the processes and leveraging simple
+      technologies to solve complex problems in the Canadian Healthcare
+      market.`,
+				info: ['linkedIn'],
+				image: 'images/content/about-09.jpg',
+			},
+		];
+		this.state = {
+			mobile_menu: false,
+			loading: false,
+			redirectToPhone: false,
+			home: 'active',
+			showcart: '',
+			cartItems: [],
+		};
+	}
 
-  componentDidMount = () => {
-    this.setState({ cartItems: [] });
-  };
+	componentDidMount = () => {
+		this.setState({ cartItems: [] });
+	};
 
-  getTotal = () => {
-    return this.state.cartItems.reduce((a, b) => {
-      return a + b.quantity * b.price;
-    }, 0);
-  };
+	getTotal = () => {
+		return this.state.cartItems.reduce((a, b) => {
+			return a + b.quantity * b.price;
+		}, 0);
+	};
 
-  handleMobileMenu = () => {
-    this.setState((prevState) => ({ mobile_menu: !prevState.mobile_menu }));
-  };
+	handleMobileMenu = () => {
+		this.setState(prevState => ({ mobile_menu: !prevState.mobile_menu }));
+	};
 
-  handleOpenMobileCart = () => {
-    this.setState({
-      mobile_menu: false,
-      showcart: "active",
-      show: false,
-      showText: "",
-      cartItems: [],
-    });
-  };
+	handleOpenMobileCart = () => {
+		this.setState({
+			mobile_menu: false,
+			showcart: 'active',
+			show: false,
+			showText: '',
+			cartItems: [],
+		});
+	};
 
-  handleOpenCart = () => {
-    this.setState({
-      showcart: "active",
-      show: false,
-      showText: "",
-      cartItems: [],
-    });
-  };
+	handleOpenCart = () => {
+		this.setState({
+			showcart: 'active',
+			show: false,
+			showText: '',
+			cartItems: [],
+		});
+	};
 
-  handleCloseCart = () => {
-    this.setState({ showcart: "" });
-  };
-  render() {
-    return (
-      <div>
-        <Header />
-        <div className="page-content"> 
-          
-          {/*//section*/}
-          {/*section*/}
-          <div className="section page-content-first">
-            <div className="container">
-              <div className="text-center mb-2  mb-md-3 mb-lg-4">
-            
-                <h1>About Us</h1>
-                <div className="h-sub theme-color">
-                A strategic game plan for treating patients
-                </div>
-                <div className="h-decor" />
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-6 text-center text-lg-left pr-md-4">
-                  <img
-                    src="images/content/about-01.jpg"
-                    className="w-100"
-                    alt=""
-                  />
-                  <div className="row mt-3">
-                    <div className="col-6">
-                      <img
-                        src="images/content/about-03.jpg"
-                        className="w-100"
-                        alt=""
-                      />
-                    </div>
-                    <div className="col-6">
-                      <img
-                        src="images/content/about-04.jpg"
-                        className="w-100"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6 mt-3 mt-lg-0">
-                  <p>
-                  Easylabs.org specializes in interpretations of medical laboratories testing, 
-                  analytics and support solutions. Our unique approach to health information
-                   provides a comprehensive, accurate and meaningful window into the patients’ 
-                   health which allows healthcare providers to achieve better clinical outcomes.
-                  </p>
-                  <p>
-                  We are passionate about helping healthcare providers 
-                  identify and reverse disease risk in their patients. 
-                  Together, through early detection and personalized treatment strategies, 
-                  we can help:
-                  </p>
-                  <ul className="marker-list-md">
-                    <li>Improve patient health and wellness</li>
-                    <li>Reduce the growing number of disability in adults due to chronic diseases</li>
-                    <li>Reduce the growing number of deaths in adults</li>
-                
-                  </ul>
-                  <div className="mt-3 mt-md-7" />
-                  <h3>
-                    Mission / Vision{" "}
-                    <span className="theme-color">Statement</span>
-                  </h3>
-                  <div className="mt-0 mt-md-4" />
-                  <p>
-                  Transform the way medicine is practiced through proactive prevention
-                  </p>
-                  <p>
-                  To reverse the epidemic of diabetes, heart disease, 
-                  and related chronic conditions by empowering patients 
-                  through a more intimate understanding of their health and 
-                  providing health practitioners the tools to promote this deeper knowledge
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*//section*/}
-          {/*section*/}
-         
-          <div className="section">
-            <div className="container-fluid px-0">
-              <div className="row no-gutters">
-                <div style={{padding: '120px'}} className="col-xl-12 bg-grey">
-                  <div  className=" mx-lg-auto px-15">
-                    <div className="title-wrap">
-                      <h2 style={{textAlign: 'center', marginBottom:'70px'}} className="h1">
-                      What Sets Us  <span className="theme-color">Apart</span>
-                      </h2>
-                    </div>
-                    <div className="mt-lg-5" />
-                    <div  className="row">
-                      <div className="col-sm-7">
-                        <ul className="marker-list-md">
-                          <li>Multiple perspectives from multiple medical fields and specializations</li>
-                          <li>Precise, detailed, accurate and personalized reporting</li>
-                          <li>Lightning-fast turnaround for lab integration and clinics on-boarding</li>
-                          <li>Extensive test menu options include routine and advanced tests for nutrition,
-                               metabolism, cardiovascular disease, diabetes, autoimmune, inflammation and hormones</li>
-                               <li>Our services are easy to implement at your practice</li>
-                        </ul>
-                      </div>
-                      <div className="col-sm-5 mt-1 mt-sm-0">
-                        <ul className="marker-list-md">
-                        <li>State-of-the art dashboard reporting offering comprehensive results 
-                            in an easy-to-read format for both patients and doctors</li>
-                        <li>Green, yellow, red dashboard for instant classification and risk assessment</li>
-                        <li>Clinical data combined with results to provide comprehensive risk assessments</li>
-                        <li>Ongoing innovation to continuously expand and improve testing offered</li>
-                    
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-    </div> 
-                <div
-                  
-                />
-              </div>
-            </div>
-          </div>
-          {/*//section*/}
-          {/*section*/}
-          <div className="section">
-            <div className="container">
-              <div className="title-wrap text-center">
-                <div className="h-sub theme-color">Easylabs</div>
-                <h2 className="h1">Our Core Values</h2>
-                <div className="h-decor" />
-              </div>
-              <div
-                className="row js-icn-carousel icn-carousel flex-column flex-sm-row text-center text-sm-left"
-                data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}]}'
-              >
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                      <i className="icon-innovation" />
-                    </div>
-                    <div>
-                      <h5 className="icn-text-title">Education</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                      <i className="icon-compassion" />
-                    </div>
-                    <div>
-                      <h5 className="icn-text-title">Passion</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                      <i className="icon-compassion" />
-                    </div>
-                    <div>
-                      <h5 className="icn-text-title">Results Driven</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                      <i className="icon-compassion" />
-                    </div>
-                    <div>
-                      <h5 className="icn-text-title">Empowerment</h5>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="col-md">
-                  <div className="icn-text">
-                    <div className="icn-text-simple">
-                      <i className="icon-integrity" />
-                    </div>
-                    <div>
-                      <h5 className="icn-text-title">Simplicity</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*//section*/}
-          {/*section*/}
-          <div className="section">
-            <div className="container-fluid px-0">
-              <div
-                className="banner-center bg-cover"
-                style={{
-                  backgroundImage: "url(images/content/banner-center.jpg)",
-                }}
-              >
-                <div className="banner-center-caption text-center">
-                  <div className="banner-center-text1">
-                    Get your free results interpretations
-                  </div>
-                  <div className="banner-center-text2">
-                    We strive to provide interpretations that are easy to understand
-                  </div>
-                  <a
-                    href="#"
-                    className="btn btn-white mt-5"
-                    data-toggle="modal"
-                    data-target="#modalBookingForm"
-                  >
-                    <i className="icon-right-arrow" />
-                    <span>Start Interpretation</span>
-                    <i className="icon-right-arrow" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+	handleCloseCart = () => {
+		this.setState({ showcart: '' });
+	};
+	render() {
+		return (
+			<div>
+				<Header />
+				<div className="page-content">
+					{/*//section*/}
+					{/*section*/}
+					<div className="section page-content-first">
+						<div className="container">
+							<div className="text-center mb-2  mb-md-3 mb-lg-4">
+								<h1>About Us</h1>
+								<div className="h-sub theme-color">A strategic game plan for treating patients</div>
+								<div className="h-decor" />
+							</div>
+						</div>
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-6 text-center text-lg-left pr-md-4">
+									<img src="images/content/about-01.jpg" className="w-100" alt="" />
+									<div className="row mt-3">
+										<div className="col-6">
+											<img src="images/content/about-03.jpg" className="w-100" alt="" />
+										</div>
+										<div className="col-6">
+											<img src="images/content/about-04.jpg" className="w-100" alt="" />
+										</div>
+									</div>
+								</div>
+								<div className="col-lg-6 mt-3 mt-lg-0">
+									<p>
+										Easylabs.org specializes in interpretations of medical laboratories testing,
+										analytics and support solutions. Our unique approach to health information
+										provides a comprehensive, accurate and meaningful window into the patients’
+										health which allows healthcare providers to achieve better clinical outcomes.
+									</p>
+									<p>
+										We are passionate about helping healthcare providers identify and reverse
+										disease risk in their patients. Together, through early detection and
+										personalized treatment strategies, we can help:
+									</p>
+									<ul className="marker-list-md">
+										<li>Improve patient health and wellness</li>
+										<li>
+											Reduce the growing number of disability in adults due to chronic diseases
+										</li>
+										<li>Reduce the growing number of deaths in adults</li>
+									</ul>
+									<div className="mt-3 mt-md-7" />
+									<h3>
+										Mission / Vision <span className="theme-color">Statement</span>
+									</h3>
+									<div className="mt-0 mt-md-4" />
+									<p>Transform the way medicine is practiced through proactive prevention</p>
+									<p>
+										To reverse the epidemic of diabetes, heart disease, and related chronic
+										conditions by empowering patients through a more intimate understanding of their
+										health and providing health practitioners the tools to promote this deeper
+										knowledge
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					{/*//section*/}
+					{/*section*/}
 
+					<div className="section">
+						<div className="container-fluid px-0">
+							<div className="row no-gutters">
+								<div style={{ padding: '120px' }} className="col-xl-12 bg-grey">
+									<div className=" mx-lg-auto px-15">
+										<div className="title-wrap">
+											<h2 style={{ textAlign: 'center', marginBottom: '70px' }} className="h1">
+												What Sets Us <span className="theme-color">Apart</span>
+											</h2>
+										</div>
+										<div className="mt-lg-5" />
+										<div className="row">
+											<div className="col-sm-7">
+												<ul className="marker-list-md">
+													<li>
+														Multiple perspectives from multiple medical fields and
+														specializations
+													</li>
+													<li>Precise, detailed, accurate and personalized reporting</li>
+													<li>
+														Lightning-fast turnaround for lab integration and clinics
+														on-boarding
+													</li>
+													<li>
+														Extensive test menu options include routine and advanced tests
+														for nutrition, metabolism, cardiovascular disease, diabetes,
+														autoimmune, inflammation and hormones
+													</li>
+													<li>Our services are easy to implement at your practice</li>
+												</ul>
+											</div>
+											<div className="col-sm-5 mt-1 mt-sm-0">
+												<ul className="marker-list-md">
+													<li>
+														State-of-the art dashboard reporting offering comprehensive
+														results in an easy-to-read format for both patients and doctors
+													</li>
+													<li>
+														Green, yellow, red dashboard for instant classification and risk
+														assessment
+													</li>
+													<li>
+														Clinical data combined with results to provide comprehensive
+														risk assessments
+													</li>
+													<li>
+														Ongoing innovation to continuously expand and improve testing
+														offered
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div />
+							</div>
+						</div>
+					</div>
+					{/*//section*/}
+					{/*section*/}
+					<div className="section">
+						<div className="container">
+							<div className="title-wrap text-center">
+								<div className="h-sub theme-color">Easylabs</div>
+								<h2 className="h1">Our Core Values</h2>
+								<div className="h-decor" />
+							</div>
+							<div
+								className="row js-icn-carousel icn-carousel flex-column flex-sm-row text-center text-sm-left"
+								data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}]}'
+							>
+								<div className="col-md">
+									<div className="icn-text">
+										<div className="icn-text-simple">
+											<i className="icon-innovation" />
+										</div>
+										<div>
+											<h5 className="icn-text-title">Education</h5>
+										</div>
+									</div>
+								</div>
+								<div className="col-md">
+									<div className="icn-text">
+										<div className="icn-text-simple">
+											<i className="icon-compassion" />
+										</div>
+										<div>
+											<h5 className="icn-text-title">Passion</h5>
+										</div>
+									</div>
+								</div>
+								<div className="col-md">
+									<div className="icn-text">
+										<div className="icn-text-simple">
+											<i className="icon-compassion" />
+										</div>
+										<div>
+											<h5 className="icn-text-title">Results Driven</h5>
+										</div>
+									</div>
+								</div>
+								<div className="col-md">
+									<div className="icn-text">
+										<div className="icn-text-simple">
+											<i className="icon-compassion" />
+										</div>
+										<div>
+											<h5 className="icn-text-title">Empowerment</h5>
+										</div>
+									</div>
+								</div>
 
-         
-          {/*//section*/}
-          {/*section*/}
-          {/*<div className="section">
+								<div className="col-md">
+									<div className="icn-text">
+										<div className="icn-text-simple">
+											<i className="icon-integrity" />
+										</div>
+										<div>
+											<h5 className="icn-text-title">Simplicity</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{/*//section*/}
+					{/*section*/}
+					<div className="section">
+						<div className="container-fluid px-0">
+							<div
+								className="banner-center bg-cover"
+								style={{
+									backgroundImage: 'url(images/content/banner-center.jpg)',
+								}}
+							>
+								<div className="banner-center-caption text-center">
+									<div className="banner-center-text1">Get your free results interpretations</div>
+									<div className="banner-center-text2">
+										We strive to provide interpretations that are easy to understand
+									</div>
+									<a
+										href="#"
+										className="btn btn-white mt-5"
+										data-toggle="modal"
+										data-target="#modalBookingForm"
+									>
+										<i className="icon-right-arrow" />
+										<span>Start Interpretation</span>
+										<i className="icon-right-arrow" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/*//section*/}
+					{/*section*/}
+					{/*<div className="section">
             <div className="container">
               <div className="row">
                 <div className="col-lg-4">
@@ -390,95 +417,65 @@ export default class About extends Component {
               </div>
             </div>
           </div>*/}
-          {/*//section*/}
+					{/*//section*/}
 
-          <div className="section" style={{marginBottom:"40px"}}>
-  <div className="container">
-    <div className="title-wrap text-center">
-      <h2 className="h1">Our Board</h2>
-      <div className="h-sub ">Easylabs.org collaborates with an extensive
-                 group of clinicians, scientists and business professionals to provide insight, 
-                 direction and expertise to ensure our continued growth as a leader in healthcare management.</div>
-      <div className="h-decor" />
-    </div>
-    <div className="row specialist-carousel js-specialist-carousel">
-      <div className="col-sm-6 col-md-4">
-        <div className="doctor-box text-center">
-          <div className="doctor-box-photo">
-            <a href="doctor-page.html"><img src="images/content/about-07.jpg" className="img-fluid" alt="" /></a>
-          </div>
-          <h5 className="doctor-box-name"><a href="doctor-page.html">Jana Tuhman</a></h5>
-          <div className="doctor-box-position">Medical Advisory Director</div>
-          <div className="doctor-box-text">
-            <p>Jana Tuhman, M.S biochemistry & M.S biophysics. 
-                          We are delighted to have Jana join our advisory board. 
-                          With her expertise in evidence-based nutrition and lifestyle coaching, 
-                          Jana is the ideal resource to provide guidance and a scientific approach to preventative health.</p>
-          </div>
-          <div className="doctor-box-bottom">
-            <div className="doctor-box-phone"><i className="icon-telephone" /><a href="tel:+1-212-857-8103">+1-234-857-8103</a></div>
-            <div className="doctor-box-social">
-              <a href="https://www.facebook.com/" target="blank" className="hovicon"><i className="icon-facebook-logo" /></a>
-              <a href="mailto:info@dentco.net" className="hovicon"><i className="icon-black-envelope" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-sm-6 col-md-4">
-        <div className="doctor-box text-center">
-          <div className="doctor-box-photo">
-            <a href="doctor-page.html"><img src="images/content/about-08.png" className="img-fluid" alt="" /></a>
-          </div>
-          <h5 className="doctor-box-name"><a href="doctor-page.html">Dr. Lohr</a></h5>
-          <div className="doctor-box-position">Co-Founder & CMO</div>
-          <div className="doctor-box-text">
-            <p>Yaron Lohr, DC, CFSA, is both a specialist and an innovator in Chiropractic,
-                           Alternative Pain Management, Rehabilitation, and Functional Medicine. 
-                           As a pioneer in Chiropractic Medicine, he founded Posture Perfect Wellness 
-                           Center in 2006 to provide a comprehensive, synergistic approach to care for people
-                            in and around Dallas. As a Surgical First Assistant, Dr. Lohr assists Physicians and Surgeons 
-                            with cases in the fields of Sports Medicine, Orthopedics, Pain Management, Neurosurgery
-                             and Functional Medicine. </p>
-          </div>
-          <div className="doctor-box-bottom">
-            <div className="doctor-box-phone"><i className="icon-telephone" /><a href="tel:+1-816-941-7259">+1-816-941-7259</a></div>
-            <div className="doctor-box-social">
-              <a href="https://www.facebook.com/" target="blank" className="hovicon"><i className="icon-facebook-logo" /></a>
-              <a href="mailto:info@dentco.net" className="hovicon"><i className="icon-black-envelope" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-sm-6 col-md-4">
-        <div className="doctor-box text-center">
-          <div className="doctor-box-photo">
-            <a href="doctor-page.html"><img src="images/content/about-09.jpg" className="img-fluid" alt="" /></a>
-          </div>
-          <h5 className="doctor-box-name"><a href="doctor-page.html">Tom Petersil</a></h5>
-          <div className="doctor-box-position">Co-Founder and CEO</div>
-          <div className="doctor-box-text">
-            <p>Tom Petersil has spent over 15 years with IBM and is bringing
-                           innovative approach to the idea of streamlining the processes
-                            and leveraging simple technologies  to solve complex problems
-                             in the Canadian Healthcare market.</p>
-          </div>
-          <div className="doctor-box-bottom">
-            <div className="doctor-box-phone"><i className="icon-telephone" /><a href="tel:+1-219-756-6567">1-219-756-6567</a></div>
-            <div className="doctor-box-social">
-              <a href="https://www.facebook.com/" target="blank" className="hovicon"><i className="icon-facebook-logo" /></a>
-              <a href="mailto:info@dentco.net" className="hovicon"><i className="icon-black-envelope" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+					<div className="section" style={{ marginBottom: '40px' }}>
+						<div className="container">
+							<div className="title-wrap text-center">
+								<h2 className="h1">Our Board</h2>
+								<div className="h-sub ">
+									Easylabs.org collaborates with an extensive group of clinicians, scientists and
+									business professionals to provide insight, direction and expertise to ensure our
+									continued growth as a leader in healthcare management.
+								</div>
+								<div className="h-decor" />
+							</div>
+							<div className="row specialist-carousel js-specialist-carousel">
+								{this.teams.map(data => (
+									<div className="col-sm-12 col-md-12">
+										<AboutCard team={data} />
+										{/* <div className="doctor-box text-center">
+										<div className="doctor-box-photo">
+											<a href="doctor-page.html">
+												<img src="images/content/about-09.jpg" className="img-fluid" alt="" />
+											</a>
+										</div>
+										<h5 className="doctor-box-name">
+											<a href="doctor-page.html">Tom Petersil</a>
+										</h5>
+										<div className="doctor-box-position">Co-Founder and CEO</div>
+										<div className="doctor-box-text">
+											<p>
+												Tom Petersil has spent over 15 years with IBM and is bringing innovative
+												approach to the idea of streamlining the processes and leveraging simple
+												technologies to solve complex problems in the Canadian Healthcare
+												market.
+											</p>
+										</div>
+										<div className="doctor-box-bottom">
+											<div className="doctor-box-phone">
+												<i className="icon-telephone" />
+												<a href="tel:+1-219-756-6567">1-219-756-6567</a>
+											</div>
+											<div className="doctor-box-social">
+												<a href="https://www.facebook.com/" target="blank" className="hovicon">
+													<i className="icon-facebook-logo" />
+												</a>
+												<a href="mailto:info@dentco.net" className="hovicon">
+													<i className="icon-black-envelope" />
+												</a>
+											</div>
+										</div>
+									</div> */}
+									</div>
+								))}
+							</div>
+						</div>
+					</div>
+				</div>
 
-        </div>
-
-        <Footer />
-      </div>
-    );
-  }
+				<Footer />
+			</div>
+		);
+	}
 }

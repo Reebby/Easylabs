@@ -55,40 +55,11 @@ export default class Home extends Component {
 									<div className="container">
 										<div className="row no-gutters">
 											<div className="col">
-												<a href="#" className="link">
+												<Link to="/interpretations_menu" className="link">
 													<i className="icon-price-tag" />
 													<span> Interpretations Menu</span>
-												</a>
-												<div className="link-drop">
-													<h5 className="link-drop-title">
-														<i className="icon-price-tag" />
-														Interpretations Menu
-													</h5>
-													<table className="row-table">
-														<tbody>
-															<tr>
-																<td>Endocrinologist Interpretation</td>
-																<td>$3</td>
-															</tr>
-															<tr>
-																<td>Fertility Interpretation</td>
-																<td>$3</td>
-															</tr>
-															<tr>
-																<td>Bio-Hacking</td>
-																<td>$3</td>
-															</tr>
-															<tr>
-																<td>Anti Aging Interpretation</td>
-																<td>Free</td>
-															</tr>
-															<tr>
-																<td>Standard Interpretation</td>
-																<td>Free</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
+												</Link>
+												
 											</div>
 											<div className="col col-close">
 												<a href="#" className="js-quickLinks-close">
@@ -157,7 +128,7 @@ export default class Home extends Component {
 								data-slick='{"arrows": false, "dots": true}'
 							>
 								<div aria-live="polite" className="slick-list draggable" tabIndex={0}>
-									<div className="slick-track" style={{ opacity: 1, width: '2688px' }}>
+									<div className="slick-track" >
 										<div
 											className="slide slick-slide slick-active"
 											data-slick-index={0}
@@ -268,6 +239,7 @@ export default class Home extends Component {
 										</div>
 									</div>
 								</div>
+
 								<ul className="slick-dots" style={{}}>
 									<li className="slick-active" aria-hidden="false">
 										<button type="button" data-role="none">
@@ -282,6 +254,13 @@ export default class Home extends Component {
 								</ul>
 							</div>
 						</div>
+					</div>
+
+					<div className="video-container">
+						<video width="400" controls poster="/easylabs_doodle_video_1.gif">
+							<source src="Easylabs doodle video.mp4" type="video/mp4" />
+							Your browser does not support HTML5 video.
+						</video>
 					</div>
 
 					{/*//section slider*/}

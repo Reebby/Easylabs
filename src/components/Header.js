@@ -72,32 +72,37 @@ export default class Header extends Component {
 										>
 											<ul className="navbar-nav">
 												<li className="nav-item">
-													<Link to="/about" className="nav-link">
-														About Us
+													<Link to="/" className="nav-link">
+														Home
 													</Link>
 												</li>
 												<li className="nav-item">
-													<a
-														href="#"
+													<Link
+														to="/interpretations_menu"
 														className="nav-link dropdown-toggle"
 														data-toggle="dropdown"
 													>
 														Interpretations Menu
-													</a>
+													</Link>
 													<ul className="dropdown-menu">
 														<li>
-															<Link to="/interpretation1" className="dropdown-item" >
-															Modern Medicine Expert
+															<Link to="/interpretation1" className="dropdown-item">
+																Modern Medicine Expert
 															</Link>
 														</li>
 														<li>
 															<Link to="/interpretation2" className="dropdown-item">
-															Complimentary Medicine Expert
+																Complimentary Medicine Expert
 															</Link>
 														</li>
-														
 													</ul>
 												</li>
+												<li className="nav-item">
+													<Link to="/about" className="nav-link">
+														About Us
+													</Link>
+												</li>
+
 												<li className="nav-item">
 													<a
 														href="#"
@@ -107,14 +112,71 @@ export default class Header extends Component {
 														Services
 													</a>
 													<ul className="dropdown-menu">
-													
 														<li>
-															<Link to="/laboratories" className="dropdown-item" >
+															<a
+																
+																className=" dropdown-toggle"
+																data-toggle="dropdown"
+															>
+																Health Care Providers
+															</a>
+															<ul className="dropdown-menu">
+																<li>
+																	<Link to="/background" className="dropdown-item">
+																		Background
+																	</Link>
+																</li>
+																<li>
+																	<Link to="/start" className="dropdown-item">
+																		Getting Started
+																	</Link>
+																</li>
+																<li>
+																	<Link to="/appointment" className="dropdown-item">
+																		Schedule an Appointment
+																	</Link>
+																</li>
+															</ul>
+														</li>
+														
+
+														<li>
+															<Link to="/laboratories" className="dropdown-item">
 																Laboratories
 															</Link>
 														</li>
 														<li>
-															<Link to="/doctors"className="dropdown-item" >
+															<a
+															
+																className="dropdown-toggle"
+																data-toggle="dropdown"
+															>
+																The Facts
+															</a>
+															<ul className="dropdown-menu">
+																<li>
+																	<Link
+																		to="statistics"
+																		className="dropdown-item"
+																		
+																	>
+																		Health Statistics
+																	</Link>
+																</li>
+																<li>
+																	<Link to="/cost" className="dropdown-item">
+																		Health Care Cost
+																	</Link>
+																</li>
+																<li>
+																	<Link to="/cornerstones" className="dropdown-item">
+																		What are the Medical Cornerstones
+																	</Link>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<Link to="/doctors" className="dropdown-item">
 																Doctors
 															</Link>
 														</li>
@@ -126,32 +188,7 @@ export default class Header extends Component {
 														
 													</ul>
 												</li>
-												<li className="nav-item">
-													<a
-														href="#"
-														className="nav-link dropdown-toggle"
-														data-toggle="dropdown"
-													>
-														Health Care Providers
-													</a>
-													<ul className="dropdown-menu">
-														<li>
-															<Link to="/background" className="dropdown-item" >
-																Background
-															</Link>
-														</li>
-														<li>
-															<Link to="/start" className="dropdown-item" >
-																Getting Started
-															</Link>
-														</li>
-														<li>
-															<Link to="/appointment"className="dropdown-item" >
-																Schedule an Appointment
-															</Link>
-														</li>
-													</ul>
-												</li>
+
 												<li className="nav-item">
 													<a
 														href="#"
@@ -162,7 +199,7 @@ export default class Header extends Component {
 													</a>
 													<ul className="dropdown-menu">
 														<li>
-															<Link to="/testing" className="dropdown-item" >
+															<Link to="/testing" className="dropdown-item">
 																Who Should Be Tested
 															</Link>
 														</li>
@@ -171,35 +208,9 @@ export default class Header extends Component {
 																How It Works
 															</Link>
 														</li>
-														
 													</ul>
 												</li>
-												<li className="nav-item dropdown">
-													<a
-														href="#"
-														className="nav-link dropdown-toggle"
-														data-toggle="dropdown"
-													>
-														The Facts
-													</a>
-													<ul className="dropdown-menu">
-														<li>
-															<Link to="statistics" className="dropdown-item" href="#">
-																Health Statistics
-															</Link>
-														</li>
-														<li>
-															<Link to="/cost" className="dropdown-item" >
-																Health Care Cost
-															</Link>
-														</li>
-														<li>
-															<Link to="/cornerstones" className="dropdown-item" >
-																What are the Medical Cornerstones
-															</Link>
-														</li>
-													</ul>
-												</li>
+
 												<li className="nav-item">
 													<a className="nav-link" href="#">
 														Contacts
@@ -209,8 +220,8 @@ export default class Header extends Component {
 										</div>
 									</nav>
 								</div>
-								<div style={{marginTop: '-20px'}} className="header-search">
-									<div  className="form-inline">
+								<div style={{ marginTop: '-20px' }} className="header-search">
+									<div className="form-inline">
 										<i className="icon-search" />
 										<input type="text" placeholder="Search" />
 										<button type="submit">

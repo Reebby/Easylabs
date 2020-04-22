@@ -114,8 +114,8 @@ export default class Header extends Component {
 								<ul className="icn-list">
 									<li>
 										<i className="icon-placeholder2" />
-										Amstardam, CA 
-										<br />
+										{/* Amstardam, CA 
+										<br /> */}
 										<a href="#" className="btn btn-xs btn-gradient">
 											<i className="icon-placeholder2" />
 											<span>Get directions on the map</span>

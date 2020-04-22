@@ -57,18 +57,18 @@ export default class Interpretation2 extends Component {
 				<Header />
 				<div className="page-content">
 					<div style={{ padding: '70px', marginTop: '-50px', marginBottom: '-50px' }}>
-						<div className="mt-3 mt-lg-8 row no-gutters col-sm-9" />
+						<div className="mt-3 mt-lg-12 row no-gutters col-sm-9" />
 						<h2 className="ml-2" style={{ textAlign: 'center' }}>
 							{' '}
 							Select a complimentary medicine expert
 						</h2>
-						<div className="mt-0 mt-lg-4" />
+						<div className="mt-0 mt-lg-12" />
 
 						<div className="container">
 							<div className="row ">
                             {
                                 this.complimentaryPlan.map((data) => (
-                                    <div className="col-md-4 col-xl-4">
+                                    <div className="col-md-12 col-xl-12">
 									<div className="department">
 										<InterpretationCard plan={data}/>
 									</div>
