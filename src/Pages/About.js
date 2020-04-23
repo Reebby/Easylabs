@@ -103,10 +103,10 @@ export default class About extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-6 text-center text-lg-left pr-md-4">
-									<img src="images/content/about-01.jpg" className="w-100" alt="" />
+									<img src="images/content/about-10.jpg" className="w-100" alt="" />
 									<div className="row mt-3">
 										<div className="col-6">
-											<img src="images/content/about-03.jpg" className="w-100" alt="" />
+											<img src="images/content/about-14.jpg" className="w-100" alt="" />
 										</div>
 										<div className="col-6">
 											<img src="images/content/about-04.jpg" className="w-100" alt="" />

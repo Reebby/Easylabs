@@ -69,7 +69,7 @@ export default class Background extends Component {
         <div className="tab-bg"><img src="images/content/bg-map.png" alt="" /></div>
         <div className="row">
           <div className="col-md-6 h-100 mb-2 mb-md-0">
-            <img src="images/content/index-img-02.jpg" alt="" className="img-fluid" />
+            <img src="images/content/about-11.jpg" alt="" className="img-fluid" />
           </div>
           <div className="col-md-6">
             <div className="pt-xl-1">

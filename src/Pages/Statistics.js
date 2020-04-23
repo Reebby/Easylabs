@@ -122,7 +122,7 @@ export default class Statistics extends Component {
                     </div>
                     <div className="col-md-6 h-100 mb-2 mb-md-0">
                       <img
-                        src="images/content/index-img-01.jpg"
+                        src="images/content/about-12.jpg"
                         alt=""
                         className="img-fluid"
                       />
@@ -193,7 +193,7 @@ export default class Statistics extends Component {
                     </div>
                     <div className="col-md-6 h-100 mb-2 mb-md-0">
                       <img
-                        src="images/content/index-img-01.jpg"
+                        src="images/content/about-13.jpg"
                         alt=""
                         className="img-fluid"
                       />
