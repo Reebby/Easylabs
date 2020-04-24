@@ -9,43 +9,47 @@ export default class Home extends Component {
 
     this.cardContent = [
       {
-        name: "Specialists' Persective",
-        iconName: "icon-testtube2",
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.`,
-      },
-      { name: "Educational Reports", iconName: "icon-micro", text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.
-	  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.` },
-      {
         name: "Fully & Customizable",
         iconName: "icon-molecular",
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.`,
-      },
-      { name: "Evidence Based", iconName: "icon-dropper", text: "evidence" },
-      {
-        name: "Precise Reporting",
-        iconName: "icon-chromosome",
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.`,
-      },
-      {
-        name: "Simple & Easy To Use",
+        text: `Reports can be customized to include branding, tests can be edited, added or removed and content can be changed within 24 hours`,
+	  },
+	  {
+        name: "Easy To Use",
         iconName: "icon-testtube",
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore sunt, sed exercitationem labore provident, rerum culpa?.`,
+        text: `Simplicity is key and we keep it simple in every step of the way for both doctors and patients`,
+	  },
+	  
+	  {
+        name: "Cutting Edge interpretations from Multiple Perspectives",
+        iconName: "icon-micro",
+        text: `Different medical specialist use different language and provide additional perspectives to enrich the story behind the data and so we by offering those perspectives`,
       },
+
+      {
+        name: "Widely accessible",
+        iconName: "icon-testtube2",
+        text: `We allow patients with access to only the most basic laboratory services to receive a rich educational report that may be their first step toward prevention`,
+	  },
+	  {
+        name: "Friendly, secure and anonymous",
+        iconName: "icon-chromosome",
+        text: `No patient name, ID or other identifying information needed. A random reference # is assigned to ensure consistency and allow for historical data to reflect pattern for further insights`,
+      },
+     
+
+      { name: "Evidence Based & Evidence Informed", iconName: "icon-dropper", text: "While we focus on education and provide multiple perspectives, we have a strict adherence to remain science based and maintain unambiguous language in our content" },
+    
+     
     ];
-//  onClick={this.handleScroll}
-this.myRef = React.createRef()  
+    //  onClick={this.handleScroll}
+    this.myRef = React.createRef();
     this.state = {
       mobile_menu: false,
       loading: false,
       redirectToPhone: false,
       home: "active",
       showcard: false,
-	  cardNumber: null,
-	  
+      cardNumber: null,
     };
   }
 
@@ -54,8 +58,8 @@ this.myRef = React.createRef()
   };
 
   handleScroll = () => {
-	window.scrollTo(0, this.myRef.current.offsetTop)
-}
+    window.scrollTo(0, this.myRef.current.offsetTop);
+  };
 
   render() {
     return (
@@ -178,14 +182,29 @@ this.myRef = React.createRef()
                           <div className="vert">
                             <div className="container">
                               <div
+                                style={{ marginTop: "100px" }}
                                 className="slide-txt1 text-no-uppercase"
                                 data-animation="fadeInDown"
                                 data-animation-delay="1s"
                               >
-                                We Educate Patients for
+                                <b>Easylabs.org</b>
                                 <br />
-                                <b>Preventative Health</b>
+                                <h1
+                                  style={{ color: "white", marginTop: "30px" }}
+                                >
+                                  Helping patients defer chronic diseases
+                                </h1>
                               </div>
+                              <h5
+                                style={{
+                                  textAlign: "center",
+                                  color: "white",
+                                  marginTop: "20px",
+                                }}
+                              >
+                                Educating patients and helping doctors & labs
+                                provide real preventative medicine
+                              </h5>
                               <div
                                 className="slide-txt2 text-no-uppercase"
                                 data-animation="fadeInUp"
@@ -197,8 +216,7 @@ this.myRef = React.createRef()
                                     backgroundColor: "#8bcbff",
                                     color: "white",
                                   }}
-								
-								 href="https://easylabs.org/patient/report/"
+                                  href="https://easylabs.org/patient/report/"
                                   target="_blank"
                                   className="btn link-inside"
                                   data-animation="fadeInUp"
@@ -209,17 +227,37 @@ this.myRef = React.createRef()
                                     Get your free results interpretations
                                   </span>
                                   <i className="icon-right-arrow" />
-                                </a><br /> <br />
-								<div  onClick={this.handleScroll}  className="scroll-btn">
-								<a ><span></span><span></span><span></span> <p className="scroll-text">Watch Video</p></a>
-								</div>
-								
+                                </a>
+                                <br /> <br />
+                                <div
+                                  onClick={this.handleScroll}
+                                  className="scroll-btn"
+                                  style={{
+                                    marginTop: "40px",
+                                    marginBottom: "40px",
+                                  }}
+                                >
+                                  <a style={{ marginTop: "50px" }}>
+                                    <span
+                                      style={{
+                                        borderColor: "#eb4c4c",
+                                        fontWeight: "50px",
+                                      }}
+                                    ></span>
+                                    <span
+                                      style={{ borderColor: "#eb4c4c" }}
+                                    ></span>
+                                    <span
+                                      style={{ borderColor: "#eb4c4c" }}
+                                    ></span>{" "}
+                                    <p className="scroll-text">Watch Video</p>
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-					  
                     </div>
                     {/* <div
 											className="slide slick-slide"
@@ -276,7 +314,6 @@ this.myRef = React.createRef()
 											</div>
 										</div> */}
                   </div>
-				
                 </div>
 
                 <ul className="slick-dots" style={{}}>
@@ -293,7 +330,6 @@ this.myRef = React.createRef()
                 </ul>
               </div>
             </div>
-	
           </div>
 
           <div ref={this.myRef} className="video-container">
@@ -350,20 +386,31 @@ this.myRef = React.createRef()
                         EasyLabs<span className="theme-color">.org</span>
                       </h2>
                       <p>
-                        Easylabs was developed by doctors for doctors from the
-                        most current and relevant clinical evidence about health
-                        coupled with advanced laboratory biomarker data. We help
-                        laboratories transform conventional and innovative
-                        biomarkers into actionable reports that can be
-                        effectively implemented in busy medical practices. We
-                        empower healthcare providers with smart information that
-                        uncovers hidden risk and provides insight into the root
-                        cause of conditions and symptoms in order to optimize
-                        clinical outcomes.
+                        Easylabs was developed by doctors for patients and
+                        doctors alike from the most current and relevant medical
+                        literature about health & advanced laboratory biomarker
+                        data. We've decoupled healthcare and patient health
+                        education by offering expert curated health information
+                        based on data accessible to the patient from their
+                        formal healthcare provider. We help transform
+                        conventional lab data into legible and actionable
+                        reports that engage patients and offer anodyne steps
+                        that can be effectively implemented in a busy world. We
+                        empower patients and healthcare providers with smart
+                        information that improves patient compliance and
+                        facilitates having the patient play a larger role in
+                        reducing morbidity.
                       </p>
                       <br /> <p>Throughout this process we:</p>
                       <ul className="marker-list-md">
-                        <li>Educate patients</li>
+                        <li>
+                          Foster a clower relationship between patient and
+                          healthcare provider
+                        </li>
+                        <li>
+                          Educate patients for improved communications with
+                          healthcare provider
+                        </li>
                         <li>Expedite the progress toward preventative care</li>
                       </ul>
                       <a
@@ -423,16 +470,15 @@ this.myRef = React.createRef()
               </div>
             </div>
             <div>
-              {
-				  this.state.showcard
-				  ?
-				  <div style={{padding: '100px'}}>
-                <p style={{ textAlign: "center" }}>
-                   {this.cardContent[this.state.cardNumber].text}
-                </p>
-				</div>
-				: ""
-              }
+              {this.state.showcard ? (
+                <div style={{ padding: "100px" }}>
+                  <p style={{ textAlign: "center" }}>
+                    {this.cardContent[this.state.cardNumber].text}
+                  </p>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
 

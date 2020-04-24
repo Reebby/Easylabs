@@ -61,12 +61,10 @@ export default class Header extends Component {
 											<a href="https://www.twitter.com/" target="blank" className="hovicon">
 												<i className="icon-twitter-logo" />
 											</a>
-											<a href="https://plus.google.com/" target="blank" className="hovicon">
-												<i className="icon-google-logo" />
+											<a href="https://www.linkedin.com/" target="blank" className="hovicon">
+												<i className="icon-linkedin-logo" />
 											</a>
-											<a href="https://www.instagram.com/" target="blank" className="hovicon">
-												<i className="icon-instagram" />
-											</a>
+											
 										</div>
 									</div>
 									<div className="col-md">
@@ -97,12 +95,10 @@ export default class Header extends Component {
 											<a href="https://www.twitter.com/" target="blank" className="hovicon">
 												<i className="icon-twitter-logo" />
 											</a>
-											<a href="https://plus.google.com/" target="blank" className="hovicon">
-												<i className="icon-google-logo" />
+											<a href="https://www.linkedin.com/company/easylabs-org/" target="blank" className="hovicon">
+												<i className="icon-linkedin" />
 											</a>
-											<a href="https://www.instagram.com/" target="blank" className="hovicon">
-												<i className="icon-instagram" />
-											</a>
+										
 										</div>
 									</div>
 								</div>
