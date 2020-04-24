@@ -9,7 +9,7 @@ export default class Home extends Component {
 
     this.cardContent = [
       {
-        name: "Fully & Customizable",
+        name: "Fully Customizable",
         iconName: "icon-molecular",
         text: `Reports can be customized to include branding, tests can be edited, added or removed and content can be changed within 24 hours`,
 	  },
@@ -26,14 +26,14 @@ export default class Home extends Component {
       },
 
       {
-        name: "Widely accessible",
+        name: "Widely Accessible",
         iconName: "icon-testtube2",
         text: `We allow patients with access to only the most basic laboratory services to receive a rich educational report that may be their first step toward prevention`,
 	  },
 	  {
-        name: "Friendly, secure and anonymous",
+        name: "Friendly, Secure and Anonymous",
         iconName: "icon-chromosome",
-        text: `No patient name, ID or other identifying information needed. A random reference # is assigned to ensure consistency and allow for historical data to reflect pattern for further insights`,
+        text: `No patient name, ID or other identifying information needed. A random reference # is assigned to ensure consistency and allow for historical data to reflect patterns for further insights`,
       },
      
 
@@ -404,7 +404,7 @@ export default class Home extends Component {
                       <br /> <p>Throughout this process we:</p>
                       <ul className="marker-list-md">
                         <li>
-                          Foster a clower relationship between patient and
+                          Foster a closer relationship between patient and
                           healthcare provider
                         </li>
                         <li>

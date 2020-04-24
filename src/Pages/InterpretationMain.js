@@ -170,7 +170,7 @@ export default class InterpretationMain extends Component {
 
                         <br />
                         <p>
-                          Complementary and alternative healthcare and medical
+                          Complementary, alternative healthcare and medical
                           practices (CAM) is a group of diverse medical and
                           health care systems, practices, and products that are
                           not presently considered to be part of conventional
