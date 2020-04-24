@@ -141,7 +141,7 @@ export default class InterpretationMain extends Component {
 										</div>
 										<div className="col-md-6">
 											<div className="pt-xl-1">
-												<h3>Complimentary Medicine Expert</h3>
+												<h3>Complementary Medicine Expert</h3>
 
 												<br />
 												<p>
@@ -162,7 +162,7 @@ export default class InterpretationMain extends Component {
 													data-animation-delay="2s"
 												>
 													<i className="icon-right-arrow" />
-													<span>Complimentary Medicine Expert Interpretations</span>
+													<span>Complementary Medicine Expert Interpretations</span>
 													<i className="icon-right-arrow" />
 												</Link>
 											</div>
@@ -224,7 +224,7 @@ export default class InterpretationMain extends Component {
                   <div className="mt-lg-4" />
                   <ul className="marker-list-md">
                     <li>TV’s in each treatment room</li>
-                    <li>Complimentary coffee, Juice</li>
+                    <li>Complementary coffee, Juice</li>
                     <li>Wireless Internet</li>
                     <li>Warm lavender towels</li>
                   </ul>

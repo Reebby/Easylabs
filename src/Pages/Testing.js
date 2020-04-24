@@ -15,8 +15,6 @@ export default class Patients extends Component {
 			loading: false,
 			redirectToPhone: false,
 			home: 'active',
-			showcart: '',
-			cartItems: [],
 			test_content1: true,
 			test_content2: false,
 			test_content3: false,
@@ -24,42 +22,14 @@ export default class Patients extends Component {
 		};
 	}
 
-	componentDidMount = () => {
-		this.setState({ cartItems: [] });
-	};
 
-	getTotal = () => {
-		return this.state.cartItems.reduce((a, b) => {
-			return a + b.quantity * b.price;
-		}, 0);
-	};
+
 
 	handleMobileMenu = () => {
 		this.setState(prevState => ({ mobile_menu: !prevState.mobile_menu }));
 	};
 
-	handleOpenMobileCart = () => {
-		this.setState({
-			mobile_menu: false,
-			showcart: 'active',
-			show: false,
-			showText: '',
-			cartItems: [],
-		});
-	};
-
-	handleOpenCart = () => {
-		this.setState({
-			showcart: 'active',
-			show: false,
-			showText: '',
-			cartItems: [],
-		});
-	};
-
-	handleCloseCart = () => {
-		this.setState({ showcart: '' });
-  };
+	
   
   handleGoToTestContent1 =() => {
     this.setState({

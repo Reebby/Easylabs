@@ -73,7 +73,7 @@ export default class HowItWorks extends Component {
     <li>With healthcare being slow to catch up with the remarkable technological advancements we’ve seen in recent years, Easylabs is here to bridge the gap. </li>
     <li>We know that blood and urine contain the insights vital to the understanding of how each unique person’s biochemistry responds to and interact with environmental factors including the foods we eat, chemicals we consume (coffee, alcohol) and environments we work and live in. There is a wealth of information in every lep report if only we could really understand it all.</li>
     <li>With Easylabs.org , you simply enter or upload the values from your lab results into our system and select the expert who’s opinion you wish to see. Family Doctor? Endocrinologist? Fertility specialist? Just click and within seconds your report will be analyzed and results interpreted using those expertise. </li>
-   <li> Maybe complimentary medicine is of interest to you these days, Naturopathy, Integrative and functional medicine are just some of the few becoming more mainstream than ever with specialists in those fields charging hundreds per session and often with no near term availability. With a click of the mouse you can access those and other perspectives right now and start making changes even prior to meeting with your specialist.</li>
+   <li> Maybe complementary medicine is of interest to you these days, Naturopathy, Integrative and functional medicine are just some of the few becoming more mainstream than ever with specialists in those fields charging hundreds per session and often with no near term availability. With a click of the mouse you can access those and other perspectives right now and start making changes even prior to meeting with your specialist.</li>
   <li> Cutting edge early adopter? We have just the thing for you, Bio-Hacking and Anti-Aging are two hot interpretations that you may select from on your way to running that marathon or beating back mother time!</li>
   </ul>
   
@@ -137,7 +137,7 @@ export default class HowItWorks extends Component {
                   <div className="mt-lg-4" />
                   <ul className="marker-list-md">
                     <li>TV’s in each treatment room</li>
-                    <li>Complimentary coffee, Juice</li>
+                    <li>Complementary coffee, Juice</li>
                     <li>Wireless Internet</li>
                     <li>Warm lavender towels</li>
                   </ul>

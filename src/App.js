@@ -19,7 +19,7 @@ import InterpretationMain from './Pages/InterpretationMain';
 import ComingSoon from './Pages/ComingSoon';
 import Cost from './Pages/Cost';
 import Cornerstones from './Pages/Cornerstones';
-
+import ScrollButton from './components/ScrollButton';
 
 function App() {
 	return (
@@ -43,6 +43,7 @@ function App() {
 				<Route path="/coming-soon" component={ComingSoon} />
 				<Route path="/cost" component={Cost} />
 				<Route path="/cornerstones" component={Cornerstones} />
+				<Route path="/scroll" component={ScrollButton} />
 			</Switch>
 			</ScrollToTop>
 		</BrowserRouter>

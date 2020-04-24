@@ -60,7 +60,7 @@ export default class Interpretation2 extends Component {
 						<div className="mt-3 mt-lg-12 row no-gutters col-sm-9" />
 						<h2 className="ml-2" style={{ textAlign: 'center' }}>
 							{' '}
-							Select a complimentary medicine expert
+							Select a complementary medicine expert
 						</h2>
 						<div className="mt-0 mt-lg-12" />
 

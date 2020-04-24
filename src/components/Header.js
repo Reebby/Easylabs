@@ -92,16 +92,12 @@ export default class Header extends Component {
 														</li>
 														<li>
 															<Link to="/interpretation2" className="dropdown-item">
-																Complimentary Medicine Expert
+																Complementary Medicine Expert
 															</Link>
 														</li>
 													</ul>
 												</li>
-												<li className="nav-item">
-													<Link to="/about" className="nav-link">
-														About Us
-													</Link>
-												</li>
+												
 
 												<li className="nav-item">
 													<a
@@ -213,22 +209,20 @@ export default class Header extends Component {
 
 												<li className="nav-item">
 													<a className="nav-link" href="#">
-														Contacts
+														Contact
 													</a>
+												</li>
+
+												<li className="nav-item">
+													<Link to="/about" className="nav-link">
+														About Us
+													</Link>
 												</li>
 											</ul>
 										</div>
 									</nav>
 								</div>
-								<div style={{ marginTop: '-20px' }} className="header-search">
-									<div className="form-inline">
-										<i className="icon-search" />
-										<input type="text" placeholder="Search" />
-										<button type="submit">
-											<i className="icon-search" />
-										</button>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</div>
