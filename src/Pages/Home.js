@@ -11,7 +11,7 @@ export default class Home extends Component {
       {
         name: "Fully Customizable",
         iconName: "icon-molecular",
-        text: `Reports can be customized to include branding, tests can be edited, added or removed and content can be changed within 24 hours`,
+        text: ` Reports can be customized to include branding. Tests can be edited, added or removed. Virtually all content can be changed within 24 hours.`,
 	  },
 	  {
         name: "Easy To Use",
@@ -22,18 +22,18 @@ export default class Home extends Component {
 	  {
         name: "Cutting Edge interpretations from Multiple Perspectives",
         iconName: "icon-micro",
-        text: `Different medical specialist use different language and provide additional perspectives to enrich the story behind the data and so we by offering those perspectives`,
+        text: `Different medical specialists may use distinct language and provide additional perspectives to enrich the story behind the data, and do so we by offering those perspectives`,
       },
 
       {
         name: "Widely Accessible",
         iconName: "icon-testtube2",
-        text: `We allow patients with access to only the most basic laboratory services to receive a rich educational report that may be their first step toward prevention`,
+        text: `We allow all patients, some with access to only the most basic laboratory services, to receive a rich educational report that may be their first step toward prevention`,
 	  },
 	  {
         name: "Friendly, Secure and Anonymous",
         iconName: "icon-chromosome",
-        text: `No patient name, ID or other identifying information needed. A random reference # is assigned to ensure consistency and allow for historical data to reflect patterns for further insights`,
+        text: `No log-in, registration, patient name, ID or other identifying information required. A random reference # is assigned to ensure consistency and allow for historical data to reflect pattern for further insights`,
       },
      
 
