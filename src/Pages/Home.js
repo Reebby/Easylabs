@@ -22,7 +22,7 @@ export default class Home extends Component {
 	  {
         name: "Cutting Edge interpretations from Multiple Perspectives",
         iconName: "icon-micro",
-        text: `Different medical specialists may use distinct language and provide additional perspectives to enrich the story behind the data, and do so we by offering those perspectives`,
+        text: `Different medical specialists may use distinct language and provide additional perspectives to enrich the story behind the data, and so do we by offering those perspectives`,
       },
 
       {
