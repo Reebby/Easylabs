@@ -99,24 +99,31 @@ export default class InterpretationMain extends Component {
 												</ul>{' '} */}
                         <br />
                         <p>
-                          A system in which medical doctors and other healthcare
-                          professionals (such as nurses, pharmacists, and
-                          therapists) treat symptoms and diseases using drugs,
-                          radiation, or surgery. Also called western medicine,
-                          allopathic medicine, biomedicine, conventional
-                          medicine, mainstream medicine, and orthodox medicine.
-                          This medical system is likely familiar to you through
-                          your interactions with your healthcare system and is
-                          renowned for the highest standard of science and
-                          evidence based approach. This aims to maximizes
-                          positive outcomes while minimizing risks in most cases
-                          and as such, it is the best methodology we have. Those
-                          who criticize it often point to the need to move from
-                          sick care to health care and the need for more focus
-                          on prevention as well as expediting the adoption of
-                          new information which is often delayed by the rigorous
-                          testing and standards required to make it into the
-                          system.
+                          Our modern medicine interpretations are aimed at
+                          delivering a chewable size summary of how your
+                          physician would approach such a test results. We base
+                          it all on scientifically validated data and current
+                          understanding of physiology – the biology of a healthy
+                          body, and of disease. If mentioning treatment options,
+                          here we would only refer to therapies that are in the
+                          mainstream of conventional medicine, ones that are
+                          usually validated by large clinical trials, or best
+                          available level of clinical evidence. We aim to
+                          capture the moment where your doctor explains to you
+                          the meaning of the test that was sent to you, and the
+                          possible interpretations of the results. That is why
+                          our content is curated by practicing physicians for
+                          accuracy and clarity.
+                        </p>
+                        <p>
+                          We note that those who criticize the modern medicine
+                          approach point to the need for more dedicated
+                          resources and research into preventive medicine and
+                          maintenance of health, and that some of the
+                          medications of tomorrow are still not incorporated
+                          into this approach. This is the logical outcome of
+                          following a rigorous process of trials and validations
+                          required to make it into this system.
                         </p>
                         <Link
                           to="/interpretation1"
