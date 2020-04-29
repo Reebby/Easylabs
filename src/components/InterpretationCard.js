@@ -36,13 +36,7 @@ class InterpretationCard extends React.Component {
 							<div className="department-tab2-text">{plan.name}</div>
 							<div className="department-tab2-decor" />
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet
-								repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore
-								sunt, sed exercitationem labore provident, rerum culpa?.
-								<br />
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores eveniet
-								repudiandae vero veritatis soluta natus nemo itaque vitae dolore quidem totam inventore
-								sunt, sed exercitationem labore provident, rerum culpa?.
+							{plan.text}
 							</p>
 						</div>
 					</div>
