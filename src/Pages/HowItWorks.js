@@ -87,7 +87,7 @@ export default class HowItWorks extends Component {
               <div
                 className="banner-center bg-cover"
                 style={{
-                  backgroundImage: "url(images/content/banner-center.jpg)",
+                  backgroundImage: "url(images/content/banner3.png)",
                 }}
               >
                 <div className="banner-center-caption text-center">

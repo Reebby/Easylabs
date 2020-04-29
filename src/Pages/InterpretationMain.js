@@ -217,12 +217,12 @@ export default class InterpretationMain extends Component {
             </div>
           </div>
 
-          <div className="section">
+          <div className="section" >
             <div className="container-fluid px-0">
               <div
                 className="banner-center bg-cover"
                 style={{
-                  backgroundImage: "url(images/content/banner-center.jpg)",
+                  backgroundImage: "url(images/content/banner3.png)",
                 }}
               >
                 <div className="banner-center-caption text-center">
