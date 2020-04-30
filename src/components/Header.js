@@ -208,9 +208,9 @@ export default class Header extends Component {
 												</li>
 
 												<li className="nav-item">
-													<a className="nav-link" href="#">
+													<Link to="/contact" className="nav-link" >
 														Contact
-													</a>
+													</Link>
 												</li>
 
 												<li className="nav-item">

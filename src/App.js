@@ -20,6 +20,7 @@ import ComingSoon from './Pages/ComingSoon';
 import Cost from './Pages/Cost';
 import Cornerstones from './Pages/Cornerstones';
 import ScrollButton from './components/ScrollButton';
+import Contact from './Pages/Contact';
 
 function App() {
 	return (
@@ -44,6 +45,7 @@ function App() {
 				<Route path="/cost" component={Cost} />
 				<Route path="/cornerstones" component={Cornerstones} />
 				<Route path="/scroll" component={ScrollButton} />
+				<Route path="/contact" component={Contact} />
 			</Switch>
 			</ScrollToTop>
 		</BrowserRouter>
